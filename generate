@@ -168,4 +168,1033 @@ Using activerecord (3.0.9)
 Using activeresource (3.0.9) 
 Using diff-lcs (1.1.3) 
 Using json (1.6.6) 
-Using bu
+Using bundler (1.1.0) 
+Using rdoc (3.12) 
+Using thor (0.14.6) 
+Using railties (3.0.9) 
+Using rails (3.0.9) 
+Using rspec-core (2.9.0) 
+Using rspec-expectations (2.9.1) 
+Using rspec-mocks (2.9.0) 
+Using rspec (2.9.0) 
+Using rspec-rails (2.9.0) 
+Using sqlite3 (1.3.5) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ rails generate rspec:install
+[1m[34m   identical[0m  .rspec
+[1m[34m       exist[0m  spec
+[1m[34m   identical[0m  spec/spec_helper.rb
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git init
+Initialized empty Git repository in /home/youngjun/ruby-test/rails_projects/sample_app/.git/
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git add .
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git commit -m "Initai[K[Kial commit" [A
+[master (root-commit) b2d9f22] Initial commit
+ 42 files changed, 10515 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 .rspec
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 README
+ create mode 100644 Rakefile
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/secret_token.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 db/schema.rb
+ create mode 100644 db/seeds.rb
+ create mode 100644 doc/README_FOR_APP
+ create mode 100644 generate
+ create mode 100644 lib/tasks/.gitkeep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/images/rails.png
+ create mode 100644 public/index.html
+ create mode 100644 public/javascripts/application.js
+ create mode 100644 public/javascripts/controls.js
+ create mode 100644 public/javascripts/dragdrop.js
+ create mode 100644 public/javascripts/effects.js
+ create mode 100644 public/javascripts/prototype.js
+ create mode 100644 public/javascripts/rails.js
+ create mode 100644 public/robots.txt
+ create mode 100644 public/stylesheets/.gitkeep
+ create mode 100755 script/rails
+ create mode 100644 spec/spec_helper.rb
+ create mode 100644 vendor/plugins/.gitkeep
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git mv README REAMD[KE[K[KDME.markdown
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ ls
+[0m[01;34mapp[0m        [01;34mdb[0m       Gemfile.lock  [01;34mlog[0m       README.markdown  [01;34mtmp[0m
+[01;34mconfig[0m     [01;34mdoc[0m      generate      [01;34mpublic[0m    [01;34mscript[0m           [01;34mvendor[0m
+config.ru  Gemfile  [01;34mlib[0m           Rakefile  [01;34mspec[0m
+[m]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git commit -a -m I[K"Improved the  README"
+[master 48ade1a] Improved the README
+ 1 files changed, 0 insertions(+), 0 deletions(-)
+ rename README => README.markdown (100%)
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git roemo[K[K[Kmo[K[K[Kekmo[K[K[Kmote add origin m[Kgit@gith ub.com:<username>/sample_app.git
+bash: username: No such file or directory
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git remote add origin git@githuub.com:<username>/sample_app.git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kyoungjun/sapme[Kle_app.git
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git push origin master
+ssh: connect to host github.com port 22: Connection timed out
+fatal: The remote end hung up unexpectedly
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ ls
+[0m[01;34mapp[0m        [01;34mdb[0m       Gemfile.lock  [01;34mlog[0m       README.markdown  [01;34mtmp[0m
+[01;34mconfig[0m     [01;34mdoc[0m      generate      [01;34mpublic[0m    [01;34mscript[0m           [01;34mvendor[0m
+config.ru  Gemfile  [01;34mlib[0m           Rakefile  [01;34mspec[0m
+[m]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git roemo[K[K[K[Kemote add origin git@gith ub.com:yjkim412/sample_app.git
+fatal: remote origin already exists.
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git remote add origin git@githuub.com:yjkim412/sample_app.git[C[1P/sample_app.git[1P/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[Co/sample_app.git[C[C[C[C[C[C[C[C[Cu/sample_app.git[C[C[C[C[C[C[C[C[C[Cn/sample_app.git[C[C[C[C[C[C[C[C[C[C[Cg/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[Cj/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[C[Cu/sample_app.gitn/sample_app.git
+fatal: remote origin already exists.
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git remote add origin git@githuub.com:youngjun/sample_app.git[C[C[C[C[C[C[1P/sample_app.git[1P/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[C[C[1P/sample_app.git[C[C[C[C[C[C[C[Cj/sample_app.git[C[C[C[C[C[C[C[C[Ck/sample_app.git[C[C[C[C[C[C[C[C[C[Ci/sample_app.git[C[C[C[C[C[C[C[C[C[C[Cm/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[C4/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[C[C1/sample_app.git2/sample_app.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit push
+^C
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ git pushremote add origin git@githuub.com:youngjun/sample_app.git[C[C[C[C[C[C[C[Cjkim412/sample_app.git[A]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push origin masterremote add origin git@githuub.com:youngjun/sapmle_app.git[A]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ [C[C[C[C[8Ppush origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ssh: connect to host github.com port 22: Connection timed out
+fatal: The remote end hung up unexpectedly
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ ls /i[Ketc/se[K[Knetworks [K[K[K[K[K[K[K[K[Kservices [K
+/etc/services
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ ls /etc/e[Kservices [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kvi /etc/services [K
+[?1049h[?1h=[1;28r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[28;1H"/etc/services" [readonly] 576L, 18832C[>c[1;1H[34m# Network services, Internet style
+#
+# Note that it is presently the policy of IANA to assign a single well-known
+# port number for both TCP and UDP; hence, officially ports have two entries
+# even if the protocol doesn't support UDP operations.
+#
+# Updated from http://www.iana.org/assignments/port-numbers and other
+# sources like http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services .
+# New ports will be added on request if they have been officially assigned
+# by IANA and used in the real-world or are needed by a debian package.
+# If you need a huge list of used numbers please install the nmap package.[m
+
+[36mtcpmux[m[9C [31m1[m[35m/[m[32mtcp[m[26C [34m# TCP port service multiplexer[m
+[36mecho[m[11C [31m7[m[35m/[m[32mtcp[m
+[36mecho[m[11C [31m7[m[35m/[m[32mudp[m
+[36mdiscard[m[8C [31m9[m[35m/[m[32mtcp[m[10C [35msink[m [35mnull[m
+[36mdiscard[m[8C [31m9[m[35m/[m[32mudp[m[10C [35msink[m [35mnull[m
+[36msystat[m[9C [31m11[m[35m/[m[32mtcp[m[9C [35musers[m
+[36mdaytime[m[8C [31m13[m[35m/[m[32mtcp[m
+[36mdaytime[m[8C [31m13[m[35m/[m[32mudp[m
+[36mnetstat[m[8C [31m15[m[35m/[m[32mtcp[m
+[36mqotd[m[11C [31m17[m[35m/[m[32mtcp[m[9C [35mquote[m
+[36mmsp[m[12C [31m18[m[35m/[m[32mtcp[m[25C [34m# message send protocol[m
+[36mmsp[m[12C [31m18[m[35m/[m[32mudp[m
+[36mchargen[m[8C [31m19[m[35m/[m[32mtcp[m[9C [35mttytst[m [35msource[m
+[36mchargen[m[8C [31m19[m[35m/[m[32mudp[m[9C [35mttytst[m [35msource[m
+[36mftp-data[m[7C [31m20[m[35m/[m[32mtcp[m[28;68H1,1[11CTop[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[28;68H2[2;1H[?12l[?25h[?25l[28;68H3[3;1H[?12l[?25h[?25l[28;68H4[4;1H[?12l[?25h[?25l[28;68H5[5;1H[?12l[?25h[?25l[28;68H6[6;1H[?12l[?25h[?25l[28;68H7[7;1H[?12l[?25h[?25l[28;68H8[8;1H[?12l[?25h[?25l[28;68H9[9;1H[?12l[?25h[?25l[28;68H10,1[10;1H[?12l[?25h[?25l[28;69H1[11;1H[?12l[?25h[?25l[28;69H2,0-1[12;1H[?12l[?25h[?25l[28;69H3,1  [13;1H[?12l[?25h[?25l[28;69H4[14;1H[?12l[?25h[?25l[28;69H5[15;1H[?12l[?25h[?25l[28;69H6[16;1H[?12l[?25h[?25l[28;69H7[17;1H[?12l[?25h[?25l[28;69H8[18;1H[?12l[?25h[?25l[28;69H9[19;1H[?12l[?25h[?25l[28;68H20[20;1H[?12l[?25h[?25l[28;69H1[21;1H[?12l[?25h[?25l[28;69H2[22;1H[?12l[?25h[?25l[28;69H3[23;1H[?12l[?25h[?25l[28;69H4[24;1H[?12l[?25h[?25l[28;69H5[25;1H[?12l[?25h[?25l[28;69H6[26;1H[?12l[?25h[?25l[28;69H7[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mftp[m[12C [31m21[m[35m/[m[32mtcp[m[28;1H[K[28;68H28,1[11C0%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mfsp[m[12C [31m21[m[35m/[m[32mudp[m[9C [35mfspd[m[28;68H[K[28;68H29,1[11C0%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mssh[m[12C [31m22[m[35m/[m[32mtcp[m[25C [34m# SSH Remote Login Protocol[m[28;68H[K[28;68H30,1[11C0%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mssh[m[12C [31m22[m[35m/[m[32mudp[m[28;68H[K[28;68H31,1[11C0%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mtelnet[m[9C [31m23[m[35m/[m[32mtcp[m[28;68H[K[28;68H32,1[11C0%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msmtp[m[11C [31m25[m[35m/[m[32mtcp[m[9C [35mmail[m[28;68H[K[28;68H33,1[11C1%[27;1H[?12l[?25h[?25l[28;69H2[26;1H[?12l[?25h[?25l[28;69H1[25;1H[?12l[?25h[?25l[28;69H0[24;1H[?12l[?25h[?25l[28;69H1[25;1H[?12l[?25h[?25l[28;69H2[26;1H[?12l[?25h[?25l[28;69H3[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mtime[m[11C [31m37[m[35m/[m[32mtcp[m[9C [35mtimserver[m[28;68H[K[28;68H34,1[11C1%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mtime[m[11C [31m37[m[35m/[m[32mudp[m[9C [35mtimserver[m[28;68H[K[28;68H35,1[11C1%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mrlp[m[12C [31m39[m[35m/[m[32mudp[m[9C [35mresource[m[7C [34m# resource location[m[28;68H[K[28;68H36,1[11C1%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnameserver[m      [31m42[m[35m/[m[32mtcp[m[9C [35mname[m[11C [34m# IEN 116[m[28;68H[K[28;68H37,1[11C1%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mwhois[m[10C [31m43[m[35m/[m[32mtcp[m[9C [35mnicname[m[28;68H[K[28;68H38,1[11C2%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mtacacs[m[9C [31m49[m[35m/[m[32mtcp[m[25C [34m# Login Host Protocol (TACACS)[m[28;68H[K[28;68H39,1[11C2%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mtacacs[m[9C [31m49[m[35m/[m[32mudp[m[28;68H[K[28;68H40,1[11C2%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mre-mail-ck[m      [31m50[m[35m/[m[32mtcp[m[25C [34m# Remote Mail Checking Protocol[m[28;68H[K[28;68H41,1[11C2%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mre-mail-ck[m      [31m50[m[35m/[m[32mudp[m[28;68H[K[28;68H42,1[11C2%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mdomain[m[9C [31m53[m[35m/[m[32mtcp[m[25C [34m# name-domain server[m[28;68H[K[28;68H43,1[11C2%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mdomain[m[9C [31m53[m[35m/[m[32mudp[m[28;68H[K[28;68H44,1[11C3%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mmtp[m[12C [31m57[m[35m/[m[32mtcp[m[25C [34m# deprecated[m[28;68H[K[28;68H45,1[11C3%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mtacacs-ds[m       [31m65[m[35m/[m[32mtcp[m[25C [34m# TACACS-Database Service[m[28;68H[K[28;68H46,1[11C3%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mtacacs-ds[m       [31m65[m[35m/[m[32mudp[m[28;68H[K[28;68H47,1[11C3%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mbootps[m[9C [31m67[m[35m/[m[32mtcp[m[25C [34m# BOOTP server[m[28;68H[K[28;68H48,1[11C3%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mbootps[m[9C [31m67[m[35m/[m[32mudp[m[28;68H[K[28;68H49,1[11C4%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mbootpc[m[9C [31m68[m[35m/[m[32mtcp[m[25C [34m# BOOTP client[m[28;68H[K[28;68H50,1[11C4%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mbootpc[m[9C [31m68[m[35m/[m[32mudp[m[28;68H[K[28;68H51,1[11C4%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mtftp[m[11C [31m69[m[35m/[m[32mudp[m[28;68H[K[28;68H52,1[11C4%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mgopher[m[9C [31m70[m[35m/[m[32mtcp[m[25C [34m# Internet Gopher[m[28;68H[K[28;68H53,1[11C4%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mgopher[m[9C [31m70[m[35m/[m[32mudp[m[28;68H[K[28;68H54,1[11C4%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mrje[m[12C [31m77[m[35m/[m[32mtcp[m[9C [35mnetrjs[m[28;68H[K[28;68H55,1[11C5%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mfinger[m[9C [31m79[m[35m/[m[32mtcp[m[28;68H[K[28;68H56,1[11C5%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mwww[m[12C [31m80[m[35m/[m[32mtcp[m[9C [35mhttp[m[11C [34m# WorldWideWeb HTTP[m[28;68H[K[28;68H57,1[11C5%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mwww[m[12C [31m80[m[35m/[m[32mudp[m[25C [34m# HyperText Transfer Protocol[m[28;68H[K[28;68H58,1[11C5%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mlink[m[11C [31m87[m[35m/[m[32mtcp[m[9C [35mttylink[m[28;68H[K[28;68H59,1[11C5%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mkerberos[m[7C [31m88[m[35m/[m[32mtcp[m[9C [35mkerberos5[m [35mkrb5[m [35mkerberos-sec[m     [34m# Kerberos v5[m[28;68H[K[28;68H60,1[11C6%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mkerberos[m[7C [31m88[m[35m/[m[32mudp[m[9C [35mkerberos5[m [35mkrb5[m [35mkerberos-sec[m     [34m# Kerberos v5[m[28;68H[K[28;68H61,1[11C6%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msupdup[m[9C [31m95[m[35m/[m[32mtcp[m[28;68H[K[28;68H62,1[11C6%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mhostnames[m       [31m101[m[35m/[m[32mtcp[m[8C [35mhostname[m[7C [34m# usually from sri-nic[m[28;68H[K[28;68H63,1[11C6%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36miso-tsap[m[7C [31m102[m[35m/[m[32mtcp[m[8C [35mtsap[m[11C [34m# part of ISODE[m[28;68H[K[28;68H64,1[11C6%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36macr-nema[m[7C [31m104[m[35m/[m[32mtcp[m[8C [35mdicom[m[10C [34m# Digital Imag. & Comm. 300[m[28;68H[K[28;68H65,1[11C6%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36macr-nema[m[7C [31m104[m[35m/[m[32mudp[m[8C [35mdicom[m[10C [34m# Digital Imag. & Comm. 300[m[28;68H[K[28;68H66,1[11C7%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mcsnet-ns[m[7C [31m105[m[35m/[m[32mtcp[m[8C [35mcso-ns[m[9C [34m# also used by CSO name server[m[28;68H[K[28;68H67,1[11C7%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mcsnet-ns[m[7C [31m105[m[35m/[m[32mudp[m[8C [35mcso-ns[m[28;68H[K[28;68H68,1[11C7%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mrtelnet[m[8C [31m107[m[35m/[m[32mtcp[m[24C [34m# Remote Telnet[m[28;68H[K[28;68H69,1[11C7%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mrtelnet[m[8C [31m107[m[35m/[m[32mudp[m[28;68H[K[28;68H70,1[11C7%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mpop2[m[11C [31m109[m[35m/[m[32mtcp[m[8C [35mpostoffice[m [35mpop-2[m [34m# POP version 2[m[28;68H[K[28;68H71,1[11C8%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mpop2[m[11C [31m109[m[35m/[m[32mudp[m[8C [35mpop-2[m[28;68H[K[28;68H72,1[11C8%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mpop3[m[11C [31m110[m[35m/[m[32mtcp[m[8C [35mpop-3[m[10C [34m# POP version 3[m[28;68H[K[28;68H73,1[11C8%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mpop3[m[11C [31m110[m[35m/[m[32mudp[m[8C [35mpop-3[m[28;68H[K[28;68H74,1[11C8%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msunrpc[m[9C [31m111[m[35m/[m[32mtcp[m[8C [35mportmapper[m      [34m# RPC 4.0 portmapper[m[28;68H[K[28;68H75,1[11C8%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msunrpc[m[9C [31m111[m[35m/[m[32mudp[m[8C [35mportmapper[m[28;68H[K[28;68H76,1[11C8%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mauth[m[11C [31m113[m[35m/[m[32mtcp[m[8C [35mauthentication[m [35mtap[m [35mident[m[28;68H[K[28;68H77,1[11C9%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msftp[m[11C [31m115[m[35m/[m[32mtcp[m[28;68H[K[28;68H78,1[11C9%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36muucp-path[m       [31m117[m[35m/[m[32mtcp[m[28;68H[K[28;68H79,1[11C9%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnntp[m[11C [31m119[m[35m/[m[32mtcp[m[8C [35mreadnews[m [35muntp[m   [34m# USENET News Transfer Protocol[m[28;68H[K[28;68H80,1[11C9%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mntp[m[12C [31m123[m[35m/[m[32mtcp[m[28;68H[K[28;68H81,1[11C9%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mntp[m[12C [31m123[m[35m/[m[32mudp[m[24C [34m# Network Time Protocol[m[28;68H[K[28;68H82,1[10C10%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mpwdgen[m[9C [31m129[m[35m/[m[32mtcp[m[24C [34m# PWDGEN service[m[28;68H[K[28;68H83,1[10C10%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mpwdgen[m[9C [31m129[m[35m/[m[32mudp[m[24C [34m# PWDGEN service[m[28;68H[K[28;68H84,1[10C10%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mloc-srv[m[8C [31m135[m[35m/[m[32mtcp[m[8C [35mepmap[m[10C [34m# Location Service[m[28;68H[K[28;68H85,1[10C10%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mloc-srv[m[8C [31m135[m[35m/[m[32mudp[m[8C [35mepmap[m[28;68H[K[28;68H86,1[10C10%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnetbios-ns[m      [31m137[m[35m/[m[32mtcp[m[24C [34m# NETBIOS Name Service[m[28;68H[K[28;68H87,1[10C10%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnetbios-ns[m      [31m137[m[35m/[m[32mudp[m[28;68H[K[28;68H88,1[10C11%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnetbios-dgm[m     [31m138[m[35m/[m[32mtcp[m[24C [34m# NETBIOS Datagram Service[m[28;68H[K[28;68H89,1[10C11%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnetbios-dgm[m     [31m138[m[35m/[m[32mudp[m[28;68H[K[28;68H90,1[10C11%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnetbios-ssn[m     [31m139[m[35m/[m[32mtcp[m[24C [34m# NETBIOS session service[m[28;68H[K[28;68H91,1[10C11%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnetbios-ssn[m     [31m139[m[35m/[m[32mudp[m[28;68H[K[28;68H92,1[10C11%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mimap2[m[10C [31m143[m[35m/[m[32mtcp[m[8C [35mimap[m[11C [34m# Interim Mail Access P 2 and 4[m[28;68H[K[28;68H93,1[10C12%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mimap2[m[10C [31m143[m[35m/[m[32mudp[m[8C [35mimap[m[28;68H[K[28;68H94,1[10C12%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msnmp[m[11C [31m161[m[35m/[m[32mtcp[m[24C [34m# Simple Net Mgmt Protocol[m[28;68H[K[28;68H95,1[10C12%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msnmp[m[11C [31m161[m[35m/[m[32mudp[m[24C [34m# Simple Net Mgmt Protocol[m[28;68H[K[28;68H96,1[10C12%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msnmp-trap[m       [31m162[m[35m/[m[32mtcp[m[8C [35msnmptrap[m[7C [34m# Traps for SNMP[m[28;68H[K[28;68H97,1[10C12%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msnmp-trap[m       [31m162[m[35m/[m[32mudp[m[8C [35msnmptrap[m[7C [34m# Traps for SNMP[m[28;68H[K[28;68H98,1[10C12%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mcmip-man[m[7C [31m163[m[35m/[m[32mtcp[m[24C [34m# ISO mgmt over IP (CMOT)[m[28;68H[K[28;68H99,1[10C13%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mcmip-man[m[7C [31m163[m[35m/[m[32mudp[m[28;68H[K[28;68H100,1[9C13%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mcmip-agent[m      [31m164[m[35m/[m[32mtcp[m[28;68H[K[28;68H101,1[9C13%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mcmip-agent[m      [31m164[m[35m/[m[32mudp[m[28;68H[K[28;68H102,1[9C13%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mmailq[m[10C [31m174[m[35m/[m[32mtcp[m[16C [34m# Mailer transport queue for Zmailer[m[28;68H[K[28;68H103,1[9C13%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mmailq[m[10C [31m174[m[35m/[m[32mudp[m[16C [34m# Mailer transport queue for Zmailer[m[28;68H[K[28;68H104,1[9C14%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mxdmcp[m[10C [31m177[m[35m/[m[32mtcp[m[24C [34m# X Display Mgr. Control Proto[m[28;68H[K[28;68H105,1[9C14%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mxdmcp[m[10C [31m177[m[35m/[m[32mudp[m[28;68H[K[28;68H106,1[9C14%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnextstep[m[7C [31m178[m[35m/[m[32mtcp[m[8C [35mNeXTStep[m [35mNextStep[m       [34m# NeXTStep window[m[28;68H[K[28;68H107,1[9C14%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mnextstep[m[7C [31m178[m[35m/[m[32mudp[m[8C [35mNeXTStep[m [35mNextStep[m       [34m#  server[m[28;68H[K[28;68H108,1[9C14%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mbgp[m[12C [31m179[m[35m/[m[32mtcp[m[24C [34m# Border Gateway Protocol[m[28;68H[K[28;68H109,1[9C14%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mbgp[m[12C [31m179[m[35m/[m[32mudp[m[28;68H[K[28;68H110,1[9C15%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mprospero[m[7C [31m191[m[35m/[m[32mtcp[m[24C [34m# Cliff Neuman's Prospero[m[28;68H[K[28;68H111,1[9C15%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mprospero[m[7C [31m191[m[35m/[m[32mudp[m[28;68H[K[28;68H112,1[9C15%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mirc[m[12C [31m194[m[35m/[m[32mtcp[m[24C [34m# Internet Relay Chat[m[28;68H[K[28;68H113,1[9C15%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36mirc[m[12C [31m194[m[35m/[m[32mudp[m[28;68H[K[28;68H114,1[9C15%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msmux[m[11C [31m199[m[35m/[m[32mtcp[m[24C [34m# SNMP Unix Multiplexer[m[28;68H[K[28;68H115,1[9C16%[27;1H[?12l[?25h[?25l[1;27r[27;1H
+[1;28r[27;1H[36msmux[m[11C [31m199[m[35m/[m[32mudp[m[28;68H[K[28;68H116,1[9C16%[27;1H[?12l[?25h[?25l[28;68H[K[28;1H:[?12l[?25hQ[?25l[?12l[?25h![?25l[?12l[?25h[?25l[1m[37m[41mE492: Not an editor command: Q![m[36C116,1[9C16%[27;1H[?12l[?25h[?25l[28;1H[K[28;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[28;1H[K[28;1H[?1l>[?12l[?25h[?1049l]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ mae[Kte poub[K[K[Kublic/hello.th[K[Khtml
+No command 'mate' found, did you mean:
+ Command 'kate' from package 'kate' (main)
+ Command 'gate' from package 'libgtkada2-bin' (universe)
+ Command 'date' from package 'coreutils' (main)
+ Command 'mute' from package 'aumix-common' (universe)
+ Command 'late' from package 'late' (universe)
+ Command 'matc' from package 'elmer' (universe)
+ Command 'mame' from package 'sdlmame' (multiverse)
+ Command 'yate' from package 'yate' (universe)
+ Command 'make' from package 'make' (main)
+mate: command not found
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ ls
+[0m[01;34mapp[0m        [01;34mdb[0m       Gemfile.lock  [01;34mlog[0m       README.markdown  [01;34mtmp[0m
+[01;34mconfig[0m     [01;34mdoc[0m      generate      [01;34mpublic[0m    [01;34mscript[0m           [01;34mvendor[0m
+config.ru  Gemfile  [01;34mlib[0m           Rakefile  [01;34mspec[0m
+[m]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ cd [K[K[Kvi ./b[Kpublic/hel[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd public/
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_app/publicyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app/public$ ls
+404.html  500.html     [0m[01;34mimages[0m      [01;34mjavascripts[0m  [01;34mstylesheets[0m
+422.html  favicon.ico  index.html  robots.txt
+[m]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_app/publicyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app/public$ vi ins[Kdex.html [K
+[?1049h[?1h=[1;28r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[28;1H"index.html" 239L, 5780C[>c[1;1H[34m<!DOCTYPE html>[m
+[36m<[m[33mhtml[m[36m>[m
+  [36m<[m[33mhead[m[36m>[m
+[35m    [m[36m<[m[33mtitle[m[36m>[m[35mRuby on Rails: Welcome aboard[m[36m</[m[33mtitle[m[36m>[m
+[35m    [m[36m<[m[33mstyle[m[36m [m[32mtype[m[36m=[m[31m"text/css"[m[36m [m[32mmedia[m[36m=[m[31m"screen"[m[36m>[m[6;6H [33mbody[m [36m{[m[7;8H [32mmargin[m: [31m0[m;[8;8H [32mmargin-bottom[m: [31m25px[m;[9;8H [32mpadding[m: [31m0[m;[10;8H [32mbackground-color[m: [31m#f0f0f0[m;[11;8H [32mfont-family[m: [31m"Lucida Grande"[m, [31m"Bitstream Vera Sans"[m, [31m"Verdana"[m;[12;8H [32mfont-size[m: [31m13px[m;[13;8H [32mcolor[m: [31m#333[m;[14;6H [36m}[m[16;6H [33mh1[m [36m{[m[17;8H [32mfont-size[m: [31m28px[m;[18;8H [32mcolor[m: [31m#000[m;[19;6H [36m}[m[21;6H [33ma[m  [36m{[m[32mcolor[m: [31m#03c[m[36m}[m[22;6H [33ma[m:[35mhover[m [36m{[m[23;8H [32mbackground-color[m: [31m#03c[m;[24;8H [32mcolor[m: [31mwhite[m;[25;8H [32mtext-decoration[m: [32mnone[m;[26;6H [36m}[m[28;68H1,1[11CTop[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[28;1H[K[28;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[28;1H[K[28;1H[?1l>[?12l[?25h[?1049l]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_app/publicyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app/public$ ls
+404.html  500.html     [0m[01;34mimages[0m      [01;34mjavascripts[0m  [01;34mstylesheets[0m
+422.html  favicon.ico  index.html  robots.txt
+[m]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_app/publicyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app/public$ vi hello.tml[K[K[Khtml
+[?1049h[?1h=[1;28r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[28;1H"hello.html" [New File][>c[2;1H[1m[34m~                                                                                    [3;1H~                                                                                    [4;1H~                                                                                    [5;1H~                                                                                    [6;1H~                                                                                    [7;1H~                                                                                    [8;1H~                                                                                    [9;1H~                                                                                    [10;1H~                                                                                    [11;1H~                                                                                    [12;1H~                                                                                    [13;1H~                                                                                    [14;1H~                                                                                    [15;1H~                                                                                    [16;1H~                                                                                    [17;1H~                                                                                    [18;1H~                                                                                    [19;1H~                                                                                    [20;1H~                                                                                    [21;1H~                                                                                    [22;1H~                                                                                    [23;1H~                                                                                    [24;1H~                                                                                    [25;1H~                                                                                    [26;1H~                                                                                    [27;1H~                                                                                    [m[28;68H0,0-1[9CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[28;1H[K[28;1H?[?12l[?25h [?25l[66C0,0-1[9CAll[1;1H[?12l[?25h[?25l[28;1H[1m-- INSERT --[m[28;68H[K[28;68H0,1[11CAll[1;1H[?12l[?25h[?25l[1m[37m[41m<[m[28;68H1,2[1;2H[?12l[?25h[?25l[36m<?[m[28;70H3[1;3H[?12l[?25h[?25l[1m[37m[41m<[m[1;2H[K[28;70H2[1;2H[?12l[?25h[?25l[34m<![m[28;70H3[1;3H[?12l[?25h[?25l[34m![m[1m[37m[41mD[m[28;70H4[1;4H[?12l[?25h[?25l[1m[37m[41mDO[m[28;70H5[1;5H[?12l[?25h[?25l[1m[37m[41mOC[m[28;70H6[1;6H[?12l[?25h[?25l[1m[37m[41mCT[m[28;70H7[1;7H[?12l[?25h[?25l[1m[37m[41mTY[m[28;70H8[1;8H[?12l[?25h[?25l[1m[37m[41mYP[m[28;70H9[1;9H[?12l[?25h[?25l[1;3H[34mDOCTYPE[m[28;70H10[1;10H[?12l[?25h[?25l[34m [m[28;71H1[1;11H[?12l[?25h[?25l[34m h[m[28;71H2[1;12H[?12l[?25h[?25l[34mht[m[28;71H3[1;13H[?12l[?25h[?25l[34mtm[m[28;71H4[1;14H[?12l[?25h[?25l[34mml[m[28;71H5[1;15H[?12l[?25h[?25l[34ml>[m[28;71H6[1;16H[?12l[?25h[?25l[2;1H[K[28;68H2,1 [2;1H[?12l[?25h[?25lM[28;70H2[2;2H[?12l[?25h[?25l[2;1H[K[28;70H1[2;1H[?12l[?25h[?25l[1m[37m[41m<[m[28;70H2[2;2H[?12l[?25h[?25l[36m<[mh[28;70H3[2;3H[?12l[?25h[?25lht[28;70H4[2;4H[?12l[?25h[?25ltm[28;70H5[2;5H[?12l[?25h[?25l[2;2H[33mhtml[m[28;70H6[2;6H[?12l[?25h[?25l[33ml[m[36m>[m[28;70H7[2;7H[?12l[?25h[?25l[3;1H[K[28;68H3,1[3;1H[?12l[?25h[?25l[28;70H2[3;2H[?12l[?25h[?25l [1m[37m[41m<[m[28;70H3[3;3H[?12l[?25h[?25l[36m<[mh[28;70H4[3;4H[?12l[?25h[?25lhe[28;70H5[3;5H[?12l[?25h[?25lea[28;70H6[3;6H[?12l[?25h[?25l[33mhead[m[28;70H7[3;7H[?12l[?25h[?25l[33md[m[36m>[m[28;70H8[3;8H[?12l[?25h[?25l[4;1H[K[28;68H4,1[4;1H[?12l[?25h[?25l[35m [m[28;70H2[4;2H[?12l[?25h[?25l[35m [m[28;70H3[4;3H[?12l[?25h[?25l[35m <[m[28;70H4[4;4H[?12l[?25h[?25l[36m<[mt[28;70H5[4;5H[?12l[?25h[?25lti[28;70H6[4;6H[?12l[?25h[?25lit[28;70H7[4;7H[?12l[?25h[?25lti[28;70H8[4;8H[?12l[?25h[?25lil[28;70H9[4;9H[?12l[?25h[?25l[4;8H[K[28;70H8[4;8H[?12l[?25h[?25l[4;7H[K[28;70H7[4;7H[?12l[?25h[?25ltl[28;70H8[4;8H[?12l[?25h[?25l[33mtitle[m[28;70H9[4;9H[?12l[?25h[?25l[33me[m[36m>[m[28;70H10[4;10H[?12l[?25h[?25l[36m>[m[35mG[m[28;71H1[4;11H[?12l[?25h[?25l[35mGr[m[28;71H2[4;12H[?12l[?25h[?25l[35mre[m[28;71H3[4;13H[?12l[?25h[?25l[35mee[m[28;71H4[4;14H[?12l[?25h[?25l[35met[m[28;71H5[4;15H[?12l[?25h[?25l[35mti[m[28;71H6[4;16H[?12l[?25h[?25l[35min[m[28;71H7[4;17H[?12l[?25h[?25l[35mng[m[28;71H8[4;18H[?12l[?25h[?25l[35mg<[m[28;71H9[4;19H[?12l[?25h[?25l[36m</[m[28;70H20[4;20H[?12l[?25h[?25l[36m/[mt[28;71H1[4;21H[?12l[?25h[?25lti[28;71H2[4;22H[?12l[?25h[?25lil[28;71H3[4;23H[?12l[?25h[?25lle[28;71H4[4;24H[?12l[?25h[?25l[4;23H[K[28;71H3[4;23H[?12l[?25h[?25l[4;22H[K[28;71H2[4;22H[?12l[?25h[?25lit[28;71H3[4;23H[?12l[?25h[?25ltl[28;71H4[4;24H[?12l[?25h[?25l[33mtitle[m[28;71H5[4;25H[?12l[?25h[?25l[33me[m[36m>[m[28;71H6[4;26H[?12l[?25h[?25l[5;1H[K[28;68H5,1 [5;1H[?12l[?25h[?25l[35m [m[28;70H2[5;2H[?12l[?25h[?25l[35m <[m[28;70H3[5;3H[?12l[?25h[?25l[36m</[m[28;70H4[5;4H[?12l[?25h[?25l[36m/[mh[28;70H5[5;5H[?12l[?25h[?25lhe[28;70H6[5;6H[?12l[?25h[?25lea[28;70H7[5;7H[?12l[?25h[?25l[33mhead[m[28;70H8[5;8H[?12l[?25h[?25l[33md[m[36m>[m[28;70H9[5;9H[?12l[?25h[?25l[6;1H[K[28;68H6,1[6;1H[?12l[?25h[?25l[28;70H2[6;2H[?12l[?25h[?25l [1m[37m[41m<[m[28;70H3[6;3H[?12l[?25h[?25l[36m<[m[33ma[m[28;70H4[6;4H[?12l[?25h[?25lab[28;70H5[6;5H[?12l[?25h[?25l[33ma[m[6;4H[K[28;70H4[6;4H[?12l[?25h[?25l[1m[37m[41m<[m[6;3H[K[28;70H3[6;3H[?12l[?25h[?25l[36m<[m[33mb[m[28;70H4[6;4H[?12l[?25h[?25lbo[28;70H5[6;5H[?12l[?25h[?25lod[28;70H6[6;6H[?12l[?25h[?25l[33mbody[m[28;70H7[6;7H[?12l[?25h[?25l[33my[m[36m>[m[28;70H8[6;8H[?12l[?25h[?25l[7;1H[K[28;68H7,1[7;1H[?12l[?25h[?25l[28;70H2[7;2H[?12l[?25h[?25l[28;70H3[7;3H[?12l[?25h[?25l[28;70H4[7;4H[?12l[?25h[?25l [1m[37m[41m<[m[28;70H5[7;5H[?12l[?25h[?25l[36m<[m[33mp[m[28;70H6[7;6H[?12l[?25h[?25l[33mp[m[36m>[m[28;70H7[7;7H[?12l[?25h[?25l[36m>[mH[28;70H8[7;8H[?12l[?25h[?25lHe[28;70H9[7;9H[?12l[?25h[?25lel[28;70H10[7;10H[?12l[?25h[?25llo[28;71H1[7;11H[?12l[?25h[?25lo,[28;71H2[7;12H[?12l[?25h[?25l[28;71H3[7;13H[?12l[?25h[?25l w[28;71H4[7;14H[?12l[?25h[?25lwo[28;71H5[7;15H[?12l[?25h[?25lor[28;71H6[7;16H[?12l[?25h[?25lrl[28;71H7[7;17H[?12l[?25h[?25lld[28;71H8[7;18H[?12l[?25h[?25ld![28;71H9[7;19H[?12l[?25h[?25l![1m[37m[41m<[m[28;70H20[7;20H[?12l[?25h[?25l[36m</[m[28;71H1[7;21H[?12l[?25h[?25l[36m/[m[33mP[m[28;71H2[7;22H[?12l[?25h[?25l[33mP[m[36m>[m[28;71H3[7;23H[?12l[?25h[?25l[7;22H[K[28;71H2[7;22H[?12l[?25h[?25l[7;21H[K[28;71H1[7;21H[?12l[?25h[?25l[36m/[m[33mp[m[28;71H2[7;22H[?12l[?25h[?25l[33mp[m[36m?[m[28;71H3[7;23H[?12l[?25h[?25l[7;22H[K[28;71H2[7;22H[?12l[?25h[?25l[33mp[m[36m>[m[28;71H3[7;23H[?12l[?25h[?25l[8;1H[K[28;68H8,1 [8;1H[?12l[?25h[?25l[28;70H2[8;2H[?12l[?25h[?25l [1m[37m[41m<[m[28;70H3[8;3H[?12l[?25h[?25l[36m</[m[28;70H4[8;4H[?12l[?25h[?25l[36m/[m[33mb[m[28;70H5[8;5H[?12l[?25h[?25lbo[28;70H6[8;6H[?12l[?25h[?25lod[28;70H7[8;7H[?12l[?25h[?25l[33mbody[m[28;70H8[8;8H[?12l[?25h[?25l[33my[m[36m>[m[28;70H9[8;9H[?12l[?25h[?25l[9;1H[K[28;68H9,1[9;1H[?12l[?25h[?25l[1m[37m[41m<[m[28;70H2[9;2H[?12l[?25h[?25l[36m</[m[28;70H3[9;3H[?12l[?25h[?25l[36m/[mh[28;70H4[9;4H[?12l[?25h[?25lht[28;70H5[9;5H[?12l[?25h[?25ltm[28;70H6[9;6H[?12l[?25h[?25l[33mhtml[m[28;70H7[9;7H[?12l[?25h[?25l[33ml[m[36m>[m[28;70H8[9;8H[?12l[?25h[28;1H[K[9;7H[?25l[28;68H9,7[11CAll[9;7H[?12l[?25h[?25l[28;68H[K[28;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"hello.html" [New] 9L, 114C written
+[?1l>[?12l[?25h[?1049l]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_app/publicyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app/public$ cd ..
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ rails s
+=> Booting WEBrick
+=> Rails 3.0.9 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2012-04-12 23:27:04] INFO  WEBrick 1.3.1
+[2012-04-12 23:27:04] INFO  ruby 1.9.2 (2011-02-18) [x86_64-linux]
+[2012-04-12 23:27:04] INFO  WEBrick::HTTPServer#start: pid=7125 port=3000
+^C[2012-04-12 23:27:25] INFO  going to shutdown ...
+[2012-04-12 23:27:25] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ ls
+[0m[01;34mapp[0m        [01;34mdb[0m       Gemfile.lock  [01;34mlog[0m       README.markdown  [01;34mtmp[0m
+[01;34mconfig[0m     [01;34mdoc[0m      generate      [01;34mpublic[0m    [01;34mscript[0m           [01;34mvendor[0m
+config.ru  Gemfile  [01;34mlib[0m           Rakefile  [01;34mspec[0m
+[m]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ bundle install
+Using rake (0.9.2.2) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.9) 
+Using builder (2.1.2) 
+Using i18n (0.5.0) 
+Using activemodel (3.0.9) 
+Using erubis (2.6.6) 
+Using rack (1.2.5) 
+Using rack-mount (0.6.14) 
+Using rack-test (0.5.7) 
+Using tzinfo (0.3.33) 
+Using actionpack (3.0.9) 
+Using mime-types (1.18) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.10) 
+Using mail (2.2.19) 
+Using actionmailer (3.0.9) 
+Using arel (2.0.10) 
+Using activerecord (3.0.9) 
+Using activeresource (3.0.9) 
+Using diff-lcs (1.1.3) 
+Using json (1.6.6) 
+Using bundler (1.1.0) 
+Using rdoc (3.12) 
+Using thor (0.14.6) 
+Using railties (3.0.9) 
+Using rails (3.0.9) 
+Using rspec-core (2.9.0) 
+Using rspec-expectations (2.9.1) 
+Using rspec-mocks (2.9.0) 
+Using rspec (2.9.0) 
+Using rspec-rails (2.9.0) 
+Using sqlite3 (1.3.5) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ sport[Kk --botstrap
+The program 'spork' is currently not installed.  You can install it by typing:
+sudo apt-get install libspork-perl
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ spork --botstrap[K[K[K[K[K[Kotstrap
+The program 'spork' is currently not installed.  You can install it by typing:
+sudo apt-get install libspork-perl
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ sudo apt-get install libspork- perl
+[sudo] password for youngjun: 
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 7%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following extra packages will be installed:
+  libappconfig-perl libfilter-perl libio-all-perl libkwiki-cache-perl libkwiki-perl
+  libspiffy-perl libspoon-perl libtemplate-perl
+Suggested packages:
+  libmldbm-perl libfile-readbackwards-perl libdb-file-lock-perl libfreezethaw-perl
+  libtemplate-perl-doc libtemplate-plugin-gd-perl libtemplate-plugin-xml-perl
+The following NEW packages will be installed:
+  libappconfig-perl libfilter-perl libio-all-perl libkwiki-cache-perl libkwiki-perl
+  libspiffy-perl libspoon-perl libspork-perl libtemplate-perl
+0 upgraded, 9 newly installed, 0 to remove and 35 not upgraded.
+Need to get 1,160kB of archives.
+After this operation, 7,258kB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+0% [Working]            0% [Connecting to us.archive.ubuntu.com]0% [Connecting to us.archive.ubuntu.com]0% [Connecting to us.archive.ubuntu.com]0% [Connecting to us.archive.ubuntu.com]                                        0% [Waiting for headers]                        Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid/main libappconfig-perl 1.56-2 [88.5kB]
+                        0% [1 libappconfig-perl 0B/88.5kB 0%]                                     1% [1 libappconfig-perl 11.8kB/88.5kB 13%]2% [1 libappconfig-perl 26.0kB/88.5kB 29%]6% [1 libappconfig-perl 75.6kB/88.5kB 85%]                                          Get:2 http://us.archive.ubuntu.com/ubuntu/ lucid/universe libfilter-perl 1.37-3 [76.9kB]
+                                          7% [2 libfilter-perl 1,769B/76.9kB 2%]                                      10% [2 libfilter-perl 28.3kB/76.9kB 36%]                                        14% [Working]             Get:3 http://us.archive.ubuntu.com/ubuntu/ lucid/universe libspiffy-perl 0.30-1 [25.9kB]
+             14% [3 libspiffy-perl 0B/25.9kB 0%]                                   16% [Working]             Get:4 http://us.archive.ubuntu.com/ubuntu/ lucid/universe libio-all-perl 0.39-2 [66.9kB]
+             16% [4 libio-all-perl 0B/66.9kB 0%]                                   20% [4 libio-all-perl 48.3kB/66.9kB 72%]                                        22% [Working]             Get:5 http://us.archive.ubuntu.com/ubuntu/ lucid/main libtemplate-perl 2.20-1build1 [715kB]
+             22% [5 libtemplate-perl 0B/715kB 0%]                                    28% [5 libtemplate-perl 74.2kB/715kB 10%]                               54.4kB/s 15s36% [5 libtemplate-perl 167kB/715kB 23%]                                54.4kB/s 13s41% [5 libtemplate-perl 227kB/715kB 31%]                                54.4kB/s 12s48% [5 libtemplate-perl 301kB/715kB 42%]                                54.4kB/s 11s56% [5 libtemplate-perl 394kB/715kB 55%]                                 54.4kB/s 9s60% [5 libtemplate-perl 446kB/715kB 62%]                                 54.4kB/s 8s69% [5 libtemplate-perl 544kB/715kB 76%]                                 54.4kB/s 6s77% [5 libtemplate-perl 641kB/715kB 89%]                                 54.4kB/s 4s81% [5 libtemplate-perl 691kB/715kB 96%]                                 54.4kB/s 3s83% [Working]                                                            54.4kB/s 3s                                                                                    Get:6 http://us.archive.ubuntu.com/ubuntu/ lucid/universe libspoon-perl 0.24-1 [55.0kB]
+83% [6 libspoon-perl 0B/55.0kB 0%]                                       54.4kB/s 3s88% [Working]                                                            54.4kB/s 2s                                                                                    Get:7 http://us.archive.ubuntu.com/ubuntu/ lucid/universe libkwiki-perl 0.39-1 [95.0kB]
+88% [7 libkwiki-perl 0B/95.0kB 0%]                                       54.4kB/s 2s96% [Working]                                                            54.4kB/s 0s                                                                                    Get:8 http://us.archive.ubuntu.com/ubuntu/ lucid/universe libkwiki-cache-perl 0.11-1.1 [4,608B]
+96% [8 libkwiki-cache-perl 0B/4,608B 0%]                                 54.4kB/s 0s97% [Working]                                                            54.4kB/s 0s                                                                                    Get:9 http://us.archive.ubuntu.com/ubuntu/ lucid/universe libspork-perl 0.20-2 [32.5kB]
+97% [9 libspork-perl 0B/32.5kB 0%]                                       54.4kB/s 0s100% [Working]                                                           54.4kB/s 0s                                                                                    Fetched 1,160kB in 11s (104kB/s)
+Selecting previously deselected package libappconfig-perl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107202 files and directories currently installed.)
+Unpacking libappconfig-perl (from .../libappconfig-perl_1.56-2_all.deb) ...
+Selecting previously deselected package libfilter-perl.
+Unpacking libfilter-perl (from .../libfilter-perl_1.37-3_amd64.deb) ...
+Selecting previously deselected package libspiffy-perl.
+Unpacking libspiffy-perl (from .../libspiffy-perl_0.30-1_all.deb) ...
+Selecting previously deselected package libio-all-perl.
+Unpacking libio-all-perl (from .../libio-all-perl_0.39-2_all.deb) ...
+Selecting previously deselected package libtemplate-perl.
+Unpacking libtemplate-perl (from .../libtemplate-perl_2.20-1build1_amd64.deb) ...
+Selecting previously deselected package libspoon-perl.
+Unpacking libspoon-perl (from .../libspoon-perl_0.24-1_all.deb) ...
+Selecting previously deselected package libkwiki-perl.
+Unpacking libkwiki-perl (from .../libkwiki-perl_0.39-1_all.deb) ...
+Selecting previously deselected package libkwiki-cache-perl.
+Unpacking libkwiki-cache-perl (from .../libkwiki-cache-perl_0.11-1.1_all.deb) ...
+Selecting previously deselected package libspork-perl.
+Unpacking libspork-perl (from .../libspork-perl_0.20-2_all.deb) ...
+Processing triggers for man-db ...
+Setting up libappconfig-perl (1.56-2) ...
+Setting up libfilter-perl (1.37-3) ...
+Setting up libspiffy-perl (0.30-1) ...
+Setting up libio-all-perl (0.39-2) ...
+Setting up libtemplate-perl (2.20-1build1) ...
+Setting up libspoon-perl (0.24-1) ...
+Setting up libkwiki-perl (0.39-1) ...
+Setting up libkwiki-cache-perl (0.11-1.1) ...
+Setting up libspork-perl (0.20-2) ...
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ spork[K[K[K[K[Kbundle install
+Using rake (0.9.2.2) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.9) 
+Using builder (2.1.2) 
+Using i18n (0.5.0) 
+Using activemodel (3.0.9) 
+Using erubis (2.6.6) 
+Using rack (1.2.5) 
+Using rack-mount (0.6.14) 
+Using rack-test (0.5.7) 
+Using tzinfo (0.3.33) 
+Using actionpack (3.0.9) 
+Using mime-types (1.18) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.10) 
+Using mail (2.2.19) 
+Using actionmailer (3.0.9) 
+Using arel (2.0.10) 
+Using activerecord (3.0.9) 
+Using activeresource (3.0.9) 
+Using diff-lcs (1.1.3) 
+Using json (1.6.6) 
+Using bundler (1.1.0) 
+Using rdoc (3.12) 
+Using thor (0.14.6) 
+Using railties (3.0.9) 
+Using rails (3.0.9) 
+Using rspec-core (2.9.0) 
+Using rspec-expectations (2.9.1) 
+Using rspec-mocks (2.9.0) 
+Using rspec (2.9.0) 
+Using rspec-rails (2.9.0) 
+Using sqlite3 (1.3.5) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ spork --bootstrap
+usage:
+  spork -new                  # Generate a new slideshow in an empty directory
+  spork -make                 # Turn the text into html slides
+  spork -start                # Start the show in a browser
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ time rspec spec/
+[33m*[0m[32m.[0m[32m.[0m[33m*[0m[33m*[0m
+
+Pending:
+[33m  PagesHelper add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/helpers/pages_helper_spec.rb:14[0m
+[33m  pages/home.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/home.html.erb_spec.rb:4[0m
+[33m  pages/contact.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/contact.html.erb_spec.rb:4[0m
+
+Finished in 0.07454 seconds
+[33m5 examples, 0 failures, 3 pending[0m
+
+real	0m2.718s
+user	0m2.270s
+sys	0m0.400s
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ spork
+usage:
+  spork -new                  # Generate a new slideshow in an empty directory
+  spork -make                 # Turn the text into html slides
+  spork -start                # Start the show in a browser
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ time rspec --drb spec/
+No DRb server is running. Running in local process instead ...
+[33m*[0m[32m.[0m[32m.[0m[33m*[0m[33m*[0m
+
+Pending:
+[33m  PagesHelper add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/helpers/pages_helper_spec.rb:14[0m
+[33m  pages/home.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/home.html.erb_spec.rb:4[0m
+[33m  pages/contact.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/contact.html.erb_spec.rb:4[0m
+
+Finished in 0.07721 seconds
+[33m5 examples, 0 failures, 3 pending[0m
+
+real	0m2.923s
+user	0m2.480s
+sys	0m0.400s
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ rspec spec/
+[33m*[0m[32m.[0m[32m.[0m[33m*[0m[33m*[0m
+
+Pending:
+[33m  PagesHelper add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/helpers/pages_helper_spec.rb:14[0m
+[33m  pages/home.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/home.html.erb_spec.rb:4[0m
+[33m  pages/contact.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/contact.html.erb_spec.rb:4[0m
+
+Finished in 0.07165 seconds
+[33m5 examples, 0 failures, 3 pending[0m
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ autotest
+loading autotest/rails_rspec2
+/home/youngjun/.rvm/rubies/ruby-1.9.2-p180/bin/ruby -rrubygems -S '/home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rspec-core-2.9.0/exe/rspec' --tty '/home/youngjun/ruby-test/rails_projects/sample_app/spec/controllers/pages_controller_spec.rb' '/home/youngjun/ruby-test/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb' '/home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb' '/home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb'
+[32m.[0m[32m.[0m[33m*[0m[33m*[0m[33m*[0m
+
+Pending:
+[33m  PagesHelper add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/helpers/pages_helper_spec.rb:14[0m
+[33m  pages/contact.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/contact.html.erb_spec.rb:4[0m
+[33m  pages/home.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/home.html.erb_spec.rb:4[0m
+
+Finished in 0.08507 seconds
+[33m5 examples, 0 failures, 3 pending[0m
+^CInterrupt a second time to quit
+/home/youngjun/.rvm/rubies/ruby-1.9.2-p180/bin/ruby -rrubygems -S '/home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rspec-core-2.9.0/exe/rspec' --tty '/home/youngjun/ruby-test/rails_projects/sample_app/spec/controllers/pages_controller_spec.rb' '/home/youngjun/ruby-test/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb' '/home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb' '/home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb'
+[32m.[0m[32m.[0m[33m*[0m[33m*[0m[33m*[0m
+
+Pending:
+[33m  PagesHelper add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/helpers/pages_helper_spec.rb:14[0m
+[33m  pages/contact.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/contact.html.erb_spec.rb:4[0m
+[33m  pages/home.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/home.html.erb_spec.rb:4[0m
+
+Finished in 0.0905 seconds
+[33m5 examples, 0 failures, 3 pending[0m
+exit
+q
+^Z
+[1]+  Stopped                 autotest
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ rspec spec
+[33m*[0m[32m.[0m[32m.[0m[33m*[0m[33m*[0m
+
+Pending:
+[33m  PagesHelper add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/helpers/pages_helper_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/helpers/pages_helper_spec.rb:14[0m
+[33m  pages/home.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/home.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/home.html.erb_spec.rb:4[0m
+[33m  pages/contact.html.erb add some examples to (or delete) /home/youngjun/ruby-test/rails_projects/sample_app/spec/views/pages/contact.html.erb_spec.rb[0m
+[36m    # No reason given[0m
+[36m    # ./spec/views/pages/contact.html.erb_spec.rb:4[0m
+
+Finished in 0.07534 seconds
+[33m5 examples, 0 failures, 3 pending[0m
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ vi ./app/views/pages/home.html..erb [K
+[?1049h[?1h=[1;28r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[28;1H"./app/views/pages/home.html.erb" 2L, 68C[>c[1;1H[36m<[m[33mh1[m[36m>[m[35mPages#home[m[36m</[m[33mh1[m[36m>
+<[m[33mp[m[36m>[mFind me in app/views/pages/home.html.erb[36m</[m[33mp[m[36m>[m
+[1m[34m~                                                                                    [4;1H~                                                                                    [5;1H~                                                                                    [6;1H~                                                                                    [7;1H~                                                                                    [8;1H~                                                                                    [9;1H~                                                                                    [10;1H~                                                                                    [11;1H~                                                                                    [12;1H~                                                                                    [13;1H~                                                                                    [14;1H~                                                                                    [15;1H~                                                                                    [16;1H~                                                                                    [17;1H~                                                                                    [18;1H~                                                                                    [19;1H~                                                                                    [20;1H~                                                                                    [21;1H~                                                                                    [22;1H~                                                                                    [23;1H~                                                                                    [24;1H~                                                                                    [25;1H~                                                                                    [26;1H~                                                                                    [27;1H~                                                                                    [m[28;68H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[28;1H[K[28;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[28;1H[K[28;1H[?1l>[?12l[?25h[?1049l]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ vi ./app/views/pages/home.html..erb[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Ke[K[K[K[K[K[K[K[K[K[K[K[K[K[Khelpers/application_heelper.rb [K
+[?1049h[?1h=[1;28r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[28;1H"./app/helpers/application_helper.rb" 2L, 29C[>c[1;1H[35mmodule[m [32mApplicationHelper[m
+[35mend[m
+[1m[34m~                                                                                    [4;1H~                                                                                    [5;1H~                                                                                    [6;1H~                                                                                    [7;1H~                                                                                    [8;1H~                                                                                    [9;1H~                                                                                    [10;1H~                                                                                    [11;1H~                                                                                    [12;1H~                                                                                    [13;1H~                                                                                    [14;1H~                                                                                    [15;1H~                                                                                    [16;1H~                                                                                    [17;1H~                                                                                    [18;1H~                                                                                    [19;1H~                                                                                    [20;1H~                                                                                    [21;1H~                                                                                    [22;1H~                                                                                    [23;1H~                                                                                    [24;1H~                                                                                    [25;1H~                                                                                    [26;1H~                                                                                    [27;1H~                                                                                    [m[28;68H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[28;68H2[2;1H[?12l[?25h[?25l[28;1H[1m-- INSERT --[m[28;13H[K[28;68H2,1[11CAll[2;1H[?12l[?25h[?25l[2;1H[K[3;1H[35mend[m[3;4H[K[28;68H3[3;1H[?12l[?25h[?25l[28;68H2[2;1H[?12l[?25h[?25l[3;27r[3;1H[L[1;28r[28;68H[K[28;68H3,1[11CAll[3;1H[?12l[?25h[?25l[4;27r[4;1H[L[1;28r[28;68H[K[28;68H4,1[11CAll[4;1H[?12l[?25h[?25l[28;68H3[3;1H[?12l[?25h[?25ld[28;70H2[3;2H[?12l[?25h[?25lde[28;70H3[3;3H[?12l[?25h[?25l[35mdef[m[28;70H4[3;4H[?12l[?25h[?25l[28;70H5[3;5H[?12l[?25h[?25l [36mt[m[28;70H6[3;6H[?12l[?25h[?25l[36mti[m[28;70H7[3;7H[?12l[?25h[?25l[36mil[m[28;70H8[3;8H[?12l[?25h[?25l[36mlt[m[28;70H9[3;9H[?12l[?25h[?25l[3;8H[K[28;70H8[3;8H[?12l[?25h[?25l[3;7H[K[28;70H7[3;7H[?12l[?25h[?25l[36mit[m[28;70H8[3;8H[?12l[?25h[?25l[36mtl[m[28;70H9[3;9H[?12l[?25h[?25l[36mle[m[28;70H10[3;10H[?12l[?25h[?25l[4;27r[4;1H[L[1;28r[28;68H[K[28;68H4,1[11CAll[4;1H[?12l[?25h[?25l[28;70H2-9[4;9H[?12l[?25h[?25l[28;70H1  [4;1H[?12l[?25h[?25l[28;70H2[4;2H[?12l[?25h[?25l[28;70H3[4;3H[?12l[?25h[?25l b[28;70H4[4;4H[?12l[?25h[?25lba[28;70H5[4;5H[?12l[?25h[?25las[28;70H6[4;6H[?12l[?25h[?25lse[28;70H7[4;7H[?12l[?25h[?25le_[28;70H8[4;8H[?12l[?25h[?25l_t[28;70H9[4;9H[?12l[?25h[?25lti[28;70H10[4;10H[?12l[?25h[?25lil[28;71H1[4;11H[?12l[?25h[?25lle[28;71H2[4;12H[?12l[?25h[?25l[4;11H[K[28;71H1[4;11H[?12l[?25h[?25l[4;10H[K[28;71H0[4;10H[?12l[?25h[?25lit[28;71H1[4;11H[?12l[?25h[?25ltl[28;71H2[4;12H[?12l[?25h[?25lle[28;71H3[4;13H[?12l[?25h[?25l[28;71H4[4;14H[?12l[?25h[?25l =[28;71H5[4;15H[?12l[?25h[?25l[28;71H6[4;16H[?12l[?25h[?25l [35m"[m
+
+[31mend[m[28;71H7[4;17H[?12l[?25h[?25l[35m"[m[31mR[m[28;71H8[4;18H[?12l[?25h[?25l[31mRb[m[28;71H9[4;19H[?12l[?25h[?25l[31mby[m[28;70H20[4;20H[?12l[?25h[?25l[31m [m[28;71H1[4;21H[?12l[?25h[?25l[31m o[m[28;71H2[4;22H[?12l[?25h[?25l[31mon[m[28;71H3[4;23H[?12l[?25h[?25l[31m [m[28;71H4[4;24H[?12l[?25h[?25l[4;23H[K[28;71H3[4;23H[?12l[?25h[?25l[4;22H[K[28;71H2[4;22H[?12l[?25h[?25l[4;21H[K[28;71H1[4;21H[?12l[?25h[?25l[4;20H[K[28;71H0[4;20H[?12l[?25h[?25l[4;19H[K[28;70H19[4;19H[?12l[?25h[?25l[4;18H[K[28;71H8[4;18H[?12l[?25h[?25l[31mRu[m[28;71H9[4;19H[?12l[?25h[?25l[31mub[m[28;70H20[4;20H[?12l[?25h[?25l[31mby[m[28;71H1[4;21H[?12l[?25h[?25l[31m [m[28;71H2[4;22H[?12l[?25h[?25l[31m o[m[28;71H3[4;23H[?12l[?25h[?25l[31mon[m[28;71H4[4;24H[?12l[?25h[?25l[31m [m[28;71H5[4;25H[?12l[?25h[?25l[31m r[m[28;71H6[4;26H[?12l[?25h[?25l[31mra[m[28;71H7[4;27H[?12l[?25h[?25l[31mai[m[28;71H8[4;28H[?12l[?25h[?25l[31mil[m[28;71H9[4;29H[?12l[?25h[?25l[31mls[m[28;70H30[4;30H[?12l[?25h[?25l[31m [m[28;71H1[4;31H[?12l[?25h[?25l[31m T[m[28;71H2[4;32H[?12l[?25h[?25l[31mTu[m[28;71H3[4;33H[?12l[?25h[?25l[31mur[m[28;71H4[4;34H[?12l[?25h[?25l[4;33H[K[28;71H3[4;33H[?12l[?25h[?25l[31mut[m[28;71H4[4;34H[?12l[?25h[?25l[31mto[m[28;71H5[4;35H[?12l[?25h[?25l[31mor[m[28;71H6[4;36H[?12l[?25h[?25l[31mri[m[28;71H7[4;37H[?12l[?25h[?25l[31mia[m[28;71H8[4;38H[?12l[?25h[?25l[31mal[m[28;71H9[4;39H[?12l[?25h[?25l[31m [m[28;70H40[4;40H[?12l[?25h[?25l[31m S[m[28;71H1[4;41H[?12l[?25h[?25l[31mSa[m[28;71H2[4;42H[?12l[?25h[?25l[31mam[m[28;71H3[4;43H[?12l[?25h[?25l[31mmp[m[28;71H4[4;44H[?12l[?25h[?25l[31mpl[m[28;71H5[4;45H[?12l[?25h[?25l[31mle[m[28;71H6[4;46H[?12l[?25h[?25l[31m [m[28;71H7[4;47H[?12l[?25h[?25l[31m A[m[28;71H8[4;48H[?12l[?25h[?25l[31mAp[m[28;71H9[4;49H[?12l[?25h[?25l[31mpp[m[28;70H50[4;50H[?12l[?25h[?25l[31m [m[28;71H1[4;51H[?12l[?25h[?25l[31m y[m[28;71H2[4;52H[?12l[?25h[?25l[4;51H[K[28;71H1[4;51H[?12l[?25h[?25l[31m b[m[28;71H2[4;52H[?12l[?25h[?25l[31mby[m[28;71H3[4;53H[?12l[?25h[?25l[31m [m[28;71H4[4;54H[?12l[?25h[?25l[31m Y[m[28;71H5[4;55H[?12l[?25h[?25l[31mYo[m[28;71H6[4;56H[?12l[?25h[?25l[31mou[m[28;71H7[4;57H[?12l[?25h[?25l[31mun[m[28;71H8[4;58H[?12l[?25h[?25l[31mng[m[28;71H9[4;59H[?12l[?25h[?25l[31mgj[m[28;70H60[4;60H[?12l[?25h[?25l[31mju[m[28;71H1[4;61H[?12l[?25h[?25l[31mun[m[28;71H2[4;62H[?12l[?25h[?25l[31mn[m[35m"
+
+end[m[28;71H3[4;63H[?12l[?25h[?25l[5;27r[5;1H[L[1;28r[28;68H[K[28;68H5,1[11CAll[5;1H[?12l[?25h[?25l[28;70H2-9[5;9H[?12l[?25h[?25l[28;70H1  [5;1H[?12l[?25h[?25l[28;70H2[5;2H[?12l[?25h[?25l[28;70H3[5;3H[?12l[?25h[?25l i[28;70H4[5;4H[?12l[?25h[?25l[33mif
+
+end[m[28;70H5[5;5H[?12l[?25h[?25l[28;70H6[5;6H[?12l[?25h[?25l @[28;70H7[5;7H[?12l[?25h[?25l[36m@t[m[28;70H8[5;8H[?12l[?25h[?25l[36mti[m[28;70H9[5;9H[?12l[?25h[?25l[36mit[m[28;70H10[5;10H[?12l[?25h[?25l[36mtl[m[28;71H1[5;11H[?12l[?25h[?25l[36mle[m[28;71H2[5;12H[?12l[?25h[?25l[36me[m.
+
+end[28;71H3[5;13H[?12l[?25h[?25l.n
+
+[33mend[m[28;71H4[5;14H[?12l[?25h[?25lni[28;71H5[5;15H[?12l[?25h[?25lil[28;71H6[5;16H[?12l[?25h[?25ll?[28;71H7[5;17H[?12l[?25h[?25l[6;27r[6;1H[L[1;28r[28;68H[K[28;68H6,1[11CAll[6;1H[?12l[?25h[?25l[28;70H2[6;2H[?12l[?25h[?25l[28;70H3[6;3H[?12l[?25h[?25l[28;70H4[6;4H[?12l[?25h[?25l[28;70H5[6;5H[?12l[?25h[?25l b[28;70H6[6;6H[?12l[?25h[?25lba[28;70H7[6;7H[?12l[?25h[?25las[28;70H8[6;8H[?12l[?25h[?25lse[28;70H9[6;9H[?12l[?25h[?25le_[28;70H10[6;10H[?12l[?25h[?25l_t[28;71H1[6;11H[?12l[?25h[?25lti[28;71H2[6;12H[?12l[?25h[?25lil[28;71H3[6;13H[?12l[?25h[?25lle[28;71H4[6;14H[?12l[?25h[?25l[6;13H[K[28;71H3[6;13H[?12l[?25h[?25l[6;12H[K[28;71H2[6;12H[?12l[?25h[?25lit[28;71H3[6;13H[?12l[?25h[?25ltl[28;71H4[6;14H[?12l[?25h[?25lle[28;71H5[6;15H[?12l[?25h[?25l[7;27r[7;1H[L[1;28r[28;68H[K[28;68H7,1[11CAll[7;1H[?12l[?25h[?25l[28;70H2[7;2H[?12l[?25h[?25l[28;70H3[7;3H[?12l[?25h[?25l e[28;70H4[7;4H[?12l[?25h[?25lel[28;70H5[7;5H[?12l[?25h[?25lls[28;70H6[7;6H[?12l[?25h[?25l[33melse[m[28;70H7[7;7H[?12l[?25h[?25l[8;27r[8;1H[L[1;28r[28;68H[K[28;68H8,1[11CAll[8;1H[?12l[?25h[?25l[28;70H2[8;2H[?12l[?25h[?25l[28;70H3[8;3H[?12l[?25h[?25l[28;70H4[8;4H[?12l[?25h[?25l[28;70H5[8;5H[?12l[?25h[?25l [35m"[m
+
+[31mend[m[28;70H6[8;6H[?12l[?25h[?25l[35m"[m[31m#[m[28;70H7[8;7H[?12l[?25h[?25l[35m#{[m
+
+end[28;70H8[8;8H[?12l[?25h[?25l[35m{[mb[28;70H9[8;9H[?12l[?25h[?25lba[28;70H10[8;10H[?12l[?25h[?25las[28;71H1[8;11H[?12l[?25h[?25lse[28;71H2[8;12H[?12l[?25h[?25le_[28;71H3[8;13H[?12l[?25h[?25l_t[28;71H4[8;14H[?12l[?25h[?25lti[28;71H5[8;15H[?12l[?25h[?25lit[28;71H6[8;16H[?12l[?25h[?25ltl[28;71H7[8;17H[?12l[?25h[?25lle[28;71H8[8;18H[?12l[?25h[?25le[35m}[m
+
+[31mend[m[8;7H[35m[46m{[10C}[m[28;71H9[8;19H[?12l[?25h[?25l[31m [m[8;7H[35m{[10C}[m[28;70H20[8;20H[?12l[?25h[?25l[?12l[?25h[?25l[31m |[m[28;71H1[8;21H[?12l[?25h[?25l[31m [m[28;71H2[8;22H[?12l[?25h[?25l[31m #[m[28;71H3[8;23H[?12l[?25h[?25l[35m#{[m
+
+end[28;71H4[8;24H[?12l[?25h[?25l[35m{[m@[28;71H5[8;25H[?12l[?25h[?25l[36m@t[m[28;71H6[8;26H[?12l[?25h[?25l[36mti[m[28;71H7[8;27H[?12l[?25h[?25l[36mit[m[28;71H8[8;28H[?12l[?25h[?25l[36mtl[m[28;71H9[8;29H[?12l[?25h[?25l[36mle[m[28;70H30[8;30H[?12l[?25h[?25l[36me[m[35m}[m
+
+[31mend[m[8;23H[35m[46m{[6C}[m[28;71H1[8;31H[?12l[?25h[?25l[35m[46m}[m[35m"[m
+
+[33mend[m[8;23H[35m{[6C}[m[28;71H2[8;32H[?12l[?25h[?25l[9;27r[9;1H[L[1;28r[28;68H[K[28;68H9,1[11CAll[9;1H[?12l[?25h[?25l[28;70H2[9;2H[?12l[?25h[?25l[28;70H3[9;3H[?12l[?25h[?25l e[28;70H4[9;4H[?12l[?25h[?25len[28;70H5[9;5H[?12l[?25h[?25l[33mend[m
+
+[35mend[m[28;70H6[9;6H[?12l[?25h[?25l[10;27r[10;1H[L[1;28r[28;68H[K[28;68H10,1[10CAll[10;1H[?12l[?25h[?25l[28;71H2[10;2H[?12l[?25h[?25l[28;71H1[10;1H[?12l[?25h[?25le[28;71H2[10;2H[?12l[?25h[?25len[28;71H3[10;3H[?12l[?25h[?25l[35mend[m[28;71H4[10;4H[?12l[?25h[?25l[28;71H3[10;3H[?12l[?25h[?25l[28;71H2[10;2H[?12l[?25h[?25l[28;71H1[10;1H[?12l[?25h[?25l [35mend[m[28;71H2[10;2H[?12l[?25h[?25l  [35mend[m[28;71H3[10;3H[?12l[?25h[?25l[28;68H9,3 [9;3H[?12l[?25h[?25l[28;70H2[9;2H[?12l[?25h[?25l  [33mend[m[28;70H3[9;3H[?12l[?25h[?25l  [33mend[m[28;70H4[9;4H[?12l[?25h[?25l[28;68H8[8;4H[?12l[?25h[?25l[28;70H3[8;3H[?12l[?25h[?25l   [35m"#{[mbase_title[35m}[m[31m | [m[35m#{[m[36m@title[m[35m}"[m[28;70H4[8;4H[?12l[?25h[?25l   [35m"#{[mbase_title[35m}[m[31m | [m[35m#{[m[36m@title[m[35m}"[m[28;70H5[8;5H[?12l[?25h[?25l[28;68H7[7;5H[?12l[?25h[?25l[28;70H4[7;4H[?12l[?25h[?25l[28;70H3[7;3H[?12l[?25h[?25l  [33melse[m[28;70H4[7;4H[?12l[?25h[?25l  [33melse[m[28;70H5[7;5H[?12l[?25h[?25l[28;68H6[6;5H[?12l[?25h[?25l[28;70H4[6;4H[?12l[?25h[?25l  base_title[28;70H5[6;5H[?12l[?25h[?25l  base_title[28;70H6[6;6H[?12l[?25h[?25l[28;68H5[5;6H[?12l[?25h[?25l[28;70H5[5;5H[?12l[?25h[?25l[28;70H4[5;4H[?12l[?25h[?25l[28;70H3[5;3H[?12l[?25h[?25l  [33mif[m [36m@title[m.nil?[28;70H4[5;4H[?12l[?25h[?25l  [33mif[m [36m@title[m.nil?[28;70H5[5;5H[?12l[?25h[?25l[28;68H4[4;5H[?12l[?25h[?25l[28;70H4[4;4H[?12l[?25h[?25l[28;70H3[4;3H[?12l[?25h[?25l  base_title = [35m"[m[31mRuby on rails Tutorial Sample App by Youngjun[m[35m"[m[28;70H4[4;4H[?12l[?25h[?25l  base_title = [35m"[m[31mRuby on rails Tutorial Sample App by Youngjun[m[35m"[m[28;70H5[4;5H[?12l[?25h[?25l[28;68H3[3;5H[?12l[?25h[?25l[28;70H4[3;4H[?12l[?25h[?25l[28;70H3[3;3H[?12l[?25h[?25l[28;70H2[3;2H[?12l[?25h[?25l[28;70H1[3;1H[?12l[?25h[?25l [35mdef[m [36mtitle[m[28;70H2[3;2H[?12l[?25h[?25l  [35mdef[m [36mtitle[m[28;70H3[3;3H[?12l[?25h[?25l[28;68H4[4;3H[?12l[?25h[?25l[28;68H5[5;3H[?12l[?25h[?25l[28;68H6[6;3H[?12l[?25h[?25l[28;68H7[7;3H[?12l[?25h[?25l[28;68H8[8;3H[?12l[?25h[?25l[28;68H9[9;3H[?12l[?25h[28;1H[K[9;2H[?25l[28;68H9,2[11CAll[9;2H[?12l[?25h[?25l[28;68H[K[28;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"./app/helpers/application_helper.rb" 12L, 201C written
+[?1l>[?12l[?25h[?1049l]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ vi ./app/views/layouts/applicattion.html.erb [K
+[?1049h[?1h=[1;28r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[28;1H"./app/views/layouts/application.html.erb" 14L, 202C[>c[1;1H[34m<!DOCTYPE html>[m
+[36m<[m[33mhtml[m[36m>
+<[m[33mhead[m[36m>[m
+[35m  [m[36m<[m[33mtitle[m[36m>[m[35mSampleApp[m[36m</[m[33mtitle[m[36m>[m
+[35m  <%=[m stylesheet_link_tag [31m:all[m [35m%>
+  <%=[m javascript_include_tag [31m:defaults[m [35m%>
+  <%=[m csrf_meta_tag [35m%>[m
+[36m</[m[33mhead[m[36m>
+<[m[33mbody[m[36m>[m
+
+[35m<%=[m [33myield[m [35m%>[m
+
+[36m</[m[33mbody[m[36m>
+</[m[33mhtml[m[36m>[m
+[1m[34m~                                                                                    [16;1H~                                                                                    [17;1H~                                                                                    [18;1H~                                                                                    [19;1H~                                                                                    [20;1H~                                                                                    [21;1H~                                                                                    [22;1H~                                                                                    [23;1H~                                                                                    [24;1H~                                                                                    [25;1H~                                                                                    [26;1H~                                                                                    [27;1H~                                                                                    [m[28;68H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[28;1H[K[28;1H:[?12l[?25hQ[?25l[?12l[?25h![?25l[?12l[?25h[?25l[28;3H[K[28;3H[?12l[?25h[?25l[28;2H[K[28;2H[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[28;1H[K[28;1H[?1l>[?12l[?25h[?1049l]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ vi ./app/views/layouts/applicattion.html.erb [K
+[?1049h[?1h=[1;28r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[28;1H"./app/views/layouts/application.html.erb" 14L, 202C[>c[1;1H[34m<!DOCTYPE html>[m
+[36m<[m[33mhtml[m[36m>
+<[m[33mhead[m[36m>[m
+[35m  [m[36m<[m[33mtitle[m[36m>[m[35mSampleApp[m[36m</[m[33mtitle[m[36m>[m
+[35m  <%=[m stylesheet_link_tag [31m:all[m [35m%>
+  <%=[m javascript_include_tag [31m:defaults[m [35m%>
+  <%=[m csrf_meta_tag [35m%>[m
+[36m</[m[33mhead[m[36m>
+<[m[33mbody[m[36m>[m
+
+[35m<%=[m [33myield[m [35m%>[m
+
+[36m</[m[33mbody[m[36m>
+</[m[33mhtml[m[36m>[m
+[1m[34m~                                                                                    [16;1H~                                                                                    [17;1H~                                                                                    [18;1H~                                                                                    [19;1H~                                                                                    [20;1H~                                                                                    [21;1H~                                                                                    [22;1H~                                                                                    [23;1H~                                                                                    [24;1H~                                                                                    [25;1H~                                                                                    [26;1H~                                                                                    [27;1H~                                                                                    [m[28;68H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[28;68H2[2;1H[?12l[?25h[?25l[28;68H3[3;1H[?12l[?25h[?25l[28;68H4[4;1H[?12l[?25h[?25l[28;70H2[4;2H[?12l[?25h[?25l[28;70H3[4;3H[?12l[?25h[?25l[28;70H4[4;4H[?12l[?25h[?25l[28;70H5[4;5H[?12l[?25h[?25l[28;70H6[4;6H[?12l[?25h[?25l[28;70H7[4;7H[?12l[?25h[?25l[28;70H8[4;8H[?12l[?25h[?25l[28;70H9[4;9H[?12l[?25h[?25l[28;70H10[4;10H[?12l[?25h[?25l[28;71H1[4;11H[?12l[?25h[?25l[28;71H0[4;10H[?12l[?25h[?25l[28;1H[1m-- REPLACE --[m[28;14H[K[28;68H4,10[10CAll[4;10H[?12l[?25h[?25l[36m>[m[35mu[m[28;71H1[4;11H[?12l[?25h[?25l[36m>[m[35mS[m[28;71H0[4;10H[?12l[?25h[?25l[36m>[m[35mR[m[28;71H1[4;11H[?12l[?25h[?25l[35mRu[m[28;71H2[4;12H[?12l[?25h[?25l[35mub[m[28;71H3[4;13H[?12l[?25h[?25l[35mby[m[28;71H4[4;14H[?12l[?25h[?25l[35my [m[28;71H5[4;15H[?12l[?25h[?25l[35m o[m[28;71H6[4;16H[?12l[?25h[?25l[35mon[m[28;71H7[4;17H[?12l[?25h[?25l[35mn [m[28;71H8[4;18H[?12l[?25h[?25l[35m R[m[28;71H9[4;19H[?12l[?25h[?25l[35mRa/title>[m[28;70H20[4;20H[?12l[?25h[?25l[5;27r[5;1H[L[1;28r[4;20H[K[5;1H[35m/title>[m[28;68H[K[28;68H5,1[11CAll[5;1H[?12l[?25h[?25l[36m<[m[33mtitle[m[36m>[m[28;70H2[5;2H[?12l[?25h[?25l[36m</[mitle[28;70H3[5;3H[?12l[?25h[?25l[36m/[mt[28;70H4[5;4H[?12l[?25h[?25lti[28;70H5[5;5H[?12l[?25h[?25lit[28;70H6[5;6H[?12l[?25h[?25ltl[28;70H7[5;7H[?12l[?25h[?25l[5;3H[33mtitle[m
+[36m  
+  
+  [m[28;70H8[5;8H[?12l[?25h[?25l[33me[m[36m?[m[28;70H9[5;9H[?12l[?25h[?25l[5;8H[K[28;70H8[5;8H[?12l[?25h[?25l[33me[m[36m>[m
+[35m  
+  
+  [m[28;70H9[5;9H[?12l[?25h[?25l[28;68H4[4;9H[?12l[?25h[?25l[28;70H10[4;10H[?12l[?25h[?25l[28;71H1[4;11H[?12l[?25h[?25l[28;71H2[4;12H[?12l[?25h[?25l[28;71H3[4;13H[?12l[?25h[?25l[28;71H4[4;14H[?12l[?25h[?25l[28;71H5[4;15H[?12l[?25h[?25l[28;71H6[4;16H[?12l[?25h[?25l[28;71H7[4;17H[?12l[?25h[?25l[28;71H8[4;18H[?12l[?25h[?25l[28;71H9[4;19H[?12l[?25h[?25l[28;70H20[4;20H[?12l[?25h[?25l[35mai[m[28;71H1[4;21H[?12l[?25h[?25l[35mil[m[28;71H2[4;22H[?12l[?25h[?25l[35mls[m[28;71H3[4;23H[?12l[?25h[?25l[35m [m[28;71H4[4;24H[?12l[?25h[?25l[35m T[m[28;71H5[4;25H[?12l[?25h[?25l[35mTu[m[28;71H6[4;26H[?12l[?25h[?25l[35mut[m[28;71H7[4;27H[?12l[?25h[?25l[35mto[m[28;71H8[4;28H[?12l[?25h[?25l[35mor[m[28;71H9[4;29H[?12l[?25h[?25l[35mri[m[28;70H30[4;30H[?12l[?25h[?25l[35mia[m[28;71H1[4;31H[?12l[?25h[?25l[35mal[m[28;71H2[4;32H[?12l[?25h[?25l[35m [m[28;71H3[4;33H[?12l[?25h[?25l[35m s[m[28;71H4[4;34H[?12l[?25h[?25l[35msa[m[28;71H5[4;35H[?12l[?25h[?25l[35map[m[28;71H6[4;36H[?12l[?25h[?25l[35mpm[m[28;71H7[4;37H[?12l[?25h[?25l[4;36H[K[28;71H6[4;36H[?12l[?25h[?25l[4;35H[K[28;71H5[4;35H[?12l[?25h[?25l[35mam[m[28;71H6[4;36H[?12l[?25h[?25l[35mmp[m[28;71H7[4;37H[?12l[?25h[?25l[35mpl[m[28;71H8[4;38H[?12l[?25h[?25l[35mle[m[28;71H9[4;39H[?12l[?25h[?25l[35m [m[28;70H40[4;40H[?12l[?25h[?25l[35m A[m[28;71H1[4;41H[?12l[?25h[?25l[35mAp[m[28;71H2[4;42H[?12l[?25h[?25l[35mpp[m[28;71H3[4;43H[?12l[?25h[?25l[35m [m[28;71H4[4;44H[?12l[?25h[?25l[35m b[m[28;71H5[4;45H[?12l[?25h[?25l[35mby[m[28;71H6[4;46H[?12l[?25h[?25l[35m [m[28;71H7[4;47H[?12l[?25h[?25l[35m j[m[28;71H8[4;48H[?12l[?25h[?25l[35mju[m[28;71H9[4;49H[?12l[?25h[?25l[35mun[m[28;70H50[4;50H[?12l[?25h[?25l[35m [m[28;71H1[4;51H[?12l[?25h[?25l[35m |[m[28;71H2[4;52H[?12l[?25h[?25l[35m [m[28;71H3[4;53H[?12l[?25h[?25l[35m <[m[28;71H4[4;54H[?12l[?25h[?25l[35m<%[m
+</title>
+  <%=[28;71H5[4;55H[?12l[?25h[?25l[35m%=[m[28;71H6[4;56H[?12l[?25h[?25l[28;71H7[4;57H[?12l[?25h[?25l @[28;71H8[4;58H[?12l[?25h[?25l[36m@t[m[28;71H9[4;59H[?12l[?25h[?25l[36mti[m[28;70H60[4;60H[?12l[?25h[?25l[36mit[m[28;71H1[4;61H[?12l[?25h[?25l[36mtl[m[28;71H2[4;62H[?12l[?25h[?25l[36mlt[m[28;71H3[4;63H[?12l[?25h[?25l[4;62H[K[28;71H2[4;62H[?12l[?25h[?25l[4;61H[K[28;71H1[4;61H[?12l[?25h[?25l[36mtl[m[28;71H2[4;62H[?12l[?25h[?25l[36mle[m[28;71H3[4;63H[?12l[?25h[?25l[28;71H4[4;64H[?12l[?25h[?25l %[28;71H5[4;65H[?12l[?25h[?25l[35m%>[m
+[36m</[m[33mtitle[m[36m>[m
+[35m  <%=[m[28;71H6[4;66H[?12l[?25h[?25l[35m><[m[28;71H7[4;67H[?12l[?25h[?25l[36m</[m[28;71H8[4;68H[?12l[?25h[?25l[36m/[mt[28;71H9[4;69H[?12l[?25h[?25lti[28;70H70[4;70H[?12l[?25h[?25lit[28;71H1[4;71H[?12l[?25h[?25ltl[28;71H2[4;72H[?12l[?25h[?25l[33mtitle[m[28;71H3[4;73H[?12l[?25h[?25l[33me[m[36m?[m[28;71H4[4;74H[?12l[?25h[?25l[4;73H[K[28;71H3[4;73H[?12l[?25h[?25l[33me[m[36m>[m[28;71H4[4;74H[?12l[?25h[?25l[28;68H5,9 [5;9H[?12l[?25h[?25l[28;70H8[5;8H[?12l[?25h[?25l[28;70H7[5;7H[?12l[?25h[?25l[28;70H6[5;6H[?12l[?25h[?25l[28;70H5[5;5H[?12l[?25h[?25l[28;70H4[5;4H[?12l[?25h[?25l[28;70H3[5;3H[?12l[?25h[?25l[28;70H2[5;2H[?12l[?25h[?25l[28;70H1[5;1H[?12l[?25h[?25l[28;68H4,74[4;74H[?12l[?25h[?25l[28;68H5,9 [5;9H[?12l[?25h[?25l[28;70H8[5;8H[?12l[?25h[?25l[28;70H7[5;7H[?12l[?25h[?25l[28;70H6[5;6H[?12l[?25h[?25l[28;70H5[5;5H[?12l[?25h[?25l[28;70H4[5;4H[?12l[?25h[?25l[28;70H3[5;3H[?12l[?25h[?25l[28;70H2[5;2H[?12l[?25h[?25l[28;70H1[5;1H[?12l[?25h[?25l[35mx/title>[m[28;70H2[5;2H[?12l[?25h[?25l[35mxx[m[28;70H3[5;3H[?12l[?25h[?25l[35mxx[m[28;70H4[5;4H[?12l[?25h[?25l[28;70H3[5;3H[?12l[?25h[?25l[28;70H2[5;2H[?12l[?25h[?25l[28;70H1[5;1H[?12l[?25h[28;1H[K[5;1H[?25l[28;68H5,1[11CAll[5;1H[?12l[?25h[?25l[1C[35mxitle>[m[5;8H[K[5;1H[?12l[?25h[?25l[35mxitle>[m[5;7H[K[5;1H[?12l[?25h[?25l[35mitle>[m[5;6H[K[5;1H[?12l[?25h[?25l[35mtle>[m[5;5H[K[5;1H[?12l[?25h[?25l[35mle>[m[5;4H[K[5;1H[?12l[?25h[?25l[35me>[m[5;3H[K[5;1H[?12l[?25h[?25l[35m>[m[5;2H[K[5;1H[?12l[?25h[?25l[5;1H[K[28;70H0-1[5;1H[?12l[?25h[?25l[5;27r[27;1H
+[1;28r[27;1H[1m[34m~                                                                                    [m[28;68H[K[28;68H5,3[11CAll[5;3H[?12l[?25h[?25l[5;27r[27;1H
+[1;28r[27;1H[1m[34m~                                                                                    [m[28;68H[K[28;68H5,3[11CAll[5;3H[?12l[?25h[?25l[5;27r[27;1H
+[1;28r[27;1H[1m[34m~                                                                                    [m[28;68H[K[28;68H5,3[11CAll[5;3H[?12l[?25h[?25l[28;68H[K[28;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"./app/views/layouts/application.html.erb" 12L, 173C written
+[?1l>[?12l[?25h[?1049l]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ rails [K[K[K[K[K[Kbundle install
+Using rake (0.9.2.2) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.9) 
+Using builder (2.1.2) 
+Using i18n (0.5.0) 
+Using activemodel (3.0.9) 
+Using erubis (2.6.6) 
+Using rack (1.2.5) 
+Using rack-mount (0.6.14) 
+Using rack-test (0.5.7) 
+Using tzinfo (0.3.33) 
+Using actionpack (3.0.9) 
+Using mime-types (1.18) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.10) 
+Using mail (2.2.19) 
+Using actionmailer (3.0.9) 
+Using arel (2.0.10) 
+Using activerecord (3.0.9) 
+Using activeresource (3.0.9) 
+Using diff-lcs (1.1.3) 
+Using json (1.6.6) 
+Using bundler (1.1.0) 
+Using rdoc (3.12) 
+Using thor (0.14.6) 
+Using railties (3.0.9) 
+Using rails (3.0.9) 
+Using rspec-core (2.9.0) 
+Using rspec-expectations (2.9.1) 
+Using rspec-mocks (2.9.0) 
+Using rspec (2.9.0) 
+Using rspec-rails (2.9.0) 
+Using sqlite3 (1.3.5) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ rails s
+=> Booting WEBrick
+=> Rails 3.0.9 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2012-04-13 00:27:07] INFO  WEBrick 1.3.1
+[2012-04-13 00:27:07] INFO  ruby 1.9.2 (2011-02-18) [x86_64-linux]
+[2012-04-13 00:27:07] INFO  WEBrick::HTTPServer#start: pid=11289 port=3000
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /home/youngjun/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2012-04-13 00:27:31 -0700
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+^C[2012-04-13 00:28:29] INFO  going to shutdown ...
+[2012-04-13 00:28:29] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ ls
+[0m[01;34mapp[0m        [01;34mdb[0m       Gemfile.lock  [01;34mlog[0m       README.markdown  [01;34mtmp[0m
+[01;34mconfig[0m     [01;34mdoc[0m      generate      [01;34mpublic[0m    [01;34mscript[0m           [01;34mvendor[0m
+config.ru  Gemfile  [01;34mlib[0m           Rakefile  [01;34mspec[0m
+[m]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ vi ./app/views/h[Kpages/home.html..erb [K
+[?1049h[?1h=[1;28r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[28;1H"./app/views/pages/home.html.erb" 2L, 68C[>c[1;1H[36m<[m[33mh1[m[36m>[m[35mPages#home[m[36m</[m[33mh1[m[36m>
+<[m[33mp[m[36m>[mFind me in app/views/pages/home.html.erb[36m</[m[33mp[m[36m>[m
+[1m[34m~                                                                                    [4;1H~                                                                                    [5;1H~                                                                                    [6;1H~                                                                                    [7;1H~                                                                                    [8;1H~                                                                                    [9;1H~                                                                                    [10;1H~                                                                                    [11;1H~                                                                                    [12;1H~                                                                                    [13;1H~                                                                                    [14;1H~                                                                                    [15;1H~                                                                                    [16;1H~                                                                                    [17;1H~                                                                                    [18;1H~                                                                                    [19;1H~                                                                                    [20;1H~                                                                                    [21;1H~                                                                                    [22;1H~                                                                                    [23;1H~                                                                                    [24;1H~                                                                                    [25;1H~                                                                                    [26;1H~                                                                                    [27;1H~                                                                                    [m[28;68H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[28;1H[K[28;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[28;1H[K[28;1H[?1l>[?12l[?25h[?1049l]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ rails c
+Loading development environment (Rails 3.0.9)
+1.9.2-p180 :001 > ""
+ => "" 
+1.9.2-p180 :002 > foo + bar
+NameError: undefined local variable or method `foo' for main:Object
+	from (irb):2
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :003 > "foo" + "bar"
+ => "foobar" 
+1.9.2-p180 :004 > "Mich"
+ => "Mich" 
+1.9.2-p180 :005 > "#{first_name} young[K[K[K[K[Khart1
+1.9.2-p180 :006"> first_name +[K= "Youngj[K"
+1.9.2-p180 :007"> "#{first n[K[K_name} hart1[K[K[K[K[Kjun"
+SyntaxError: (irb):6: syntax error, unexpected tCONSTANT, expecting $end
+first_name = "Young"
+                   ^
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :008 > second_name = "jun"
+ => "jun" 
+1.9.2-p180 :009 > "#{second_name} young"
+ => "jun young" 
+1.9.2-p180 :010 > print "foo"
+foo => nil 
+1.9.2-p180 :011 > pint "ffo[K[Koo\n"
+NoMethodError: undefined method `pint' for main:Object
+	from (irb):11
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :012 > rin[K[K[Kprint "foo\n"
+foo
+ => nil 
+1.9.2-p180 :013 > \[K'\n'
+ => "\\n" 
+1.9.2-p180 :014 > "foobar".length
+ => 6 
+1.9.2-p180 :015 > "foobar".empas[K[Kty?
+ => false 
+1.9.2-p180 :016 > "".empty?
+ => true 
+1.9.2-p180 :017 > s = "foo"
+ => "foo" 
+1.9.2-p180 :018 > if s.empty?
+1.9.2-p180 :019?>   "The string is empty"
+1.9.2-p180 :020?>   else
+1.9.2-p180 :021 >     "Te[K[KNot Empty"
+1.9.2-p180 :022?>   end [K
+ => "Not Empty" 
+1.9.2-p180 :023 > x = "foo"
+ => "foo" 
+1.9.2-p180 :024 > i[Ky = ""
+ => "" 
+1.9.2-p180 :025 > puts "Both are empty" if x.empty? && y.empty?
+ => nil 
+1.9.2-p180 :026 > puts "One is empty" if s[Kx.empty? || y.empty:[K?
+One is empty
+ => nil 
+1.9.2-p180 :027 > puts " xi[K[K[Kx is not empty" if !x.empty:
+1.9.2-p180 :028 >   puts "x is not empty" if !x.empty:[K?
+SyntaxError: (irb):27: syntax error, unexpected ':'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :029 > nil [K.to_s
+ => "" 
+1.9.2-p180 :030 > nil.to_s.empty
+NoMethodError: undefined method `empty' for "":String
+	from (irb):30
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :031 > nil.to_s.empa[Kty?
+ => true 
+1.9.2-p180 :032 > "foo".nil?
+ => false 
+1.9.2-p180 :033 > "".nil?
+ => false 
+1.9.2-p180 :034 > nil.nil?
+ => true 
+1.9.2-p180 :035 > tile[K[K[Kitle
+NameError: undefined local variable or method `title' for main:Object
+	from (irb):35
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :036 > titile[K[K[Kl[K[K[K[K@title
+ => nil 
+1.9.2-p180 :037 > puts " there is no" if @tiltle[K[K[K[K[Kitle.nil?
+ there is no
+ => nil 
+1.9.2-p180 :038 > "#{@title}"
+ => "" 
+1.9.2-p180 :039 > if[K[Kstring = "foobar"
+ => "foobar" 
+1.9.2-p180 :040 > puts "The string '#{string|[K}' is nonempty." unless string.empty?
+The string 'foobar' is nonempty.
+ => nil 
+1.9.2-p180 :041 > def string_messg[Kage(stin[K[K[Kg[Ktring)
+1.9.2-p180 :042?>   if string [K.empa[Kty?
+1.9.2-p180 :043?>     "it's and emp[K[K[K[K[K empty stinr[K[K[Kring"
+1.9.2-p180 :044?>     else
+1.9.2-p180 :045 >       "the string is em[K[Knone"
+1.9.2-p180 :046?>     end
+1.9.2-p180 :047?>   end
+ => nil 
+1.9.2-p180 :048 > puts string_message"[K("")
+it's an empty string
+ => nil 
+1.9.2-p180 :049 > puts string_message)[K("jun")
+the string is none
+ => nil 
+1.9.2-p180 :050 > def string_message(string_[K)
+1.9.2-p180 :051?>   returen[K[Kn "It's and e[K[K[K empty string" if string.empty?
+1.9.2-p180 :052?>   return "The string is nonep[Kmpty."
+1.9.2-p180 :053?>   end
+ => nil 
+1.9.2-p180 :054 > puts string_message("junjun")
+The string is nonempty.
+ => nil 
+1.9.2-p180 :055 > def title
+1.9.2-p180 :056?>   base_tile[K[Ktle = "Ruby on jun"
+1.9.2-p180 :057?>   if @title.nil?
+1.9.2-p180 :058?>     base_title
+1.9.2-p180 :059?>     else
+1.9.2-p180 :060 >       "#{base_title} | #{titl[K[K[K[K@title}"
+1.9.2-p180 :061?>     end
+1.9.2-p180 :062?>   end
+ => nil 
+1.9.2-p180 :063 > end
+SyntaxError: (irb):63: syntax error, unexpected keyword_end
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :064 > puts til[Ktle
+Ruby on jun
+ => nil 
+1.9.2-p180 :065 > "young jun kim kkk".split
+ => ["young", "jun", "kim", "kkk"] 
+1.9.2-p180 :066 > "fooxx[Kbarxbazx".split('x')
+ => ["foo", "bar", "baz"] 
+1.9.2-p180 :067 > a = [42, 8, 17]
+ => [42, 8, 17] 
+1.9.2-p180 :068 > a[0]
+ => 42 
+1.9.2-p180 :069 > a[1]
+ => 8 
+1.9.2-p180 :070 > a[2]
+ => 17 
+1.9.2-p180 :071 > a[3]
+ => nil 
+1.9.2-p180 :072 > a
+ => [42, 8, 17] 
+1.9.2-p180 :073 > a.first
+ => 42 
+1.9.2-p180 :074 > a.second
+ => 8 
+1.9.2-p180 :075 > a.last
+ => 17 
+1.9.2-p180 :076 > a.lat[Kst = a[1]
+NoMethodError: undefined method `last=' for [42, 8, 17]:Array
+	from (irb):76
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :077 > a.last = a[1][K[K[K[K[K= a[-1]
+ => true 
+1.9.2-p180 :078 > as.[K[K.sort
+ => [8, 17, 42] 
+1.9.2-p180 :079 > a.reverse[K[K[K[K[K[K[K[K[Ka.res[Kverse
+ => [17, 8, 42] 
+1.9.2-p180 :080 > a.shuffle
+ => [17, 8, 42] 
+1.9.2-p180 :081 > a.shuffle
+ => [8, 42, 17] 
+1.9.2-p180 :082 > a.shuffle
+ => [8, 17, 42] 
+1.9.2-p180 :083 > a << 7
+ => [42, 8, 17, 7] 
+1.9.2-p180 :084 > a ,,[K[K<< "foo" << "bar"
+ => [42, 8, 17, 7, "foo", "bar"] 
+1.9.2-p180 :085 > a <<"ff"
+1.9.2-p180 :086"> a < [K, "[K[K[K< "gg"
+1.9.2-p180 :087"> a.join
+1.9.2-p180 :088"> a
+1.9.2-p180 :089"> >>
+1.9.2-p180 :090"> a
+1.9.2-p180 :091"> a <<[K[K[K[Ka
+1.9.2-p180 :092"> a[Ka.last
+1.9.2-p180 :093"> a[Ka << ff[K[Kff[K[K"ff'[K" >>[K[K<< "bb"
+1.9.2-p180 :094"> b = [1 2 3][K[K[K[K[K, 3,[K[K2, 3]
+1.9.2-p180 :095"> b
+1.9.2-p180 :096"> ^C
+1.9.2-p180 :096 > exit
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ rails c
+Loading development environment (Rails 3.0.9)
+1.9.2-p180 :001 > a = [1, 2, 3]
+ => [1, 2, 3] 
+1.9.2-p180 :002 > a.sort
+ => [1, 2, 3] 
+1.9.2-p180 :003 > a << 8
+ => [1, 2, 3, 8] 
+1.9.2-p180 :004 > a << "jj" [K
+ => [1, 2, 3, 8, "jj"] 
+1.9.2-p180 :005 > 0..9
+ => 0..9 
+1.9.2-p180 :006 > 0..9.to_a
+NoMethodError: undefined method `to_a' for 9:Fixnum
+	from (irb):6
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :007 > 0..9
+ => 0..9 
+1.9.2-p180 :008 > (0..9).to_a
+ => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+1.9.2-p180 :009 > a = %w[ff[Koo bar baz quux]
+ => ["foo", "bar", "baz", "quux"] 
+1.9.2-p180 :010 > ["foo", "bar", "baz", "quux"]
+ => ["foo", "bar", "baz", "quux"] 
+1.9.2-p180 :011 > a[0..2]
+ => ["foo", "bar", "baz"] 
+1.9.2-p180 :012 > a[a[K0..1[K3]
+ => ["foo", "bar", "baz", "quux"] 
+1.9.2-p180 :013 > ('a'..'e').to_a
+ => ["a", "b", "c", "d", "e"] 
+1.9.2-p180 :014 > ("a".."e").to_a
+ => ["a", "b", "c", "d", "e"] 
+1.9.2-p180 :015 > (1..5).each{[K { \i[K[K|i| puts 2 *i[K i}
+2
+4
+6
+8
+10
+ => 1..5 
+1.9.2-p180 :016 > (1..5) [K.each do [i[K[K\i\[K[K[K|i\[K|
+1.9.2-p180 :017 >     puts 2*[K * I
+1.9.2-p180 :018?>   pu[K[Kputs 2 ([K* i
+1.9.2-p180 :019?>   end
+NameError: uninitialized constant I
+	from (irb):17:in `block in irb_binding'
+	from (irb):16:in `each'
+	from (irb):16
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :020 > (1..5).each do |i\[K[Ki|
+1.9.2-p180 :021 >     puts 2 * i
+1.9.2-p180 :022?>   end
+2
+4
+6
+8
+10
+ => 1..5 
+1.9.2-p180 :023 > (1..5).each do \[K|number\[K|
+1.9.2-p180 :024 >     puts 2 * number
+1.9.2-p180 :025?>   puts '--'
+1.9.2-p180 :026?>   end
+2
+--
+4
+--
+6
+--
+8
+--
+10
+--
+ => 1..5 
+1.9.2-p180 :027 > (a[K'a'..z'[K[K'z').to_a
+ => ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] 
+1.9.2-p180 :028 > ('a'..'z').to_a.shuffle
+ => ["d", "x", "k", "i", "w", "s", "e", "t", "p", "l", "m", "b", "h", "j", "o", "r", "y", "a", "n", "g", "f", "v", "q", "u", "z", "c"] 
+1.9.2-p180 :029 > ('a'..'z').to_a.shuffle0[K[0..7]
+ => ["o", "w", "f", "d", "y", "r", "k", "v"] 
+1.9.2-p180 :030 > ('a'..'z').to_a.shuffle[0..7].join
+ => "vxhnprgz" 
+1.9.2-p180 :031 > user ([K[K=[K = {}
+ => {} 
+1.9.2-p180 :032 > usr[Ker["first_name"] = "jun"
+ => "jun" 
+1.9.2-p180 :033 > user["last_am[K[Kname"] = "youngjun"[K[K[K[K"
+ => "young" 
+1.9.2-p180 :034 > user[first_name"]
+1.9.2-p180 :035"> user["first_name"]
+1.9.2-p180 :036"> user = {:[K :name => "A[KMichael Hartl", :email => michael@ea[Kam.com"}[K }
+SyntaxError: (irb):35: syntax error, unexpected tIDENTIFIER, expecting ']'
+user["first_name"]
+                ^
+(irb):36: syntax error, unexpected tCONSTANT, expecting $end
+user = { :name => "Michael Hartl", :email => michael@eam.com" }
+                          ^
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:44:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands/console.rb:8:in `start'
+	from /home/youngjun/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.9/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.2-p180 :037 > exit
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 00:0c:29:73:c4:b2  
+          inet addr:192.168.211.128  Bcast:192.168.211.255  Mask:255.255.255.0
+          inet6 addr: fe80::20c:29ff:fe73:c4b2/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:14869 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:10716 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:16555348 (16.5 MB)  TX bytes:780177 (780.1 KB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:1317 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1317 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:208489 (208.4 KB)  TX bytes:208489 (208.4 KB)
+
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ www.p[K[K[K[K[Ki[Kping www.google.com
+PING www.l.google.com (74.125.71.147) 56(84) bytes of data.
+64 bytes from hx-in-f147.1e100.net (74.125.71.147): icmp_seq=1 ttl=128 time=44.2 ms
+64 bytes from hx-in-f147.1e100.net (74.125.71.147): icmp_seq=2 ttl=128 time=41.2 ms
+^C
+--- www.l.google.com ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 41.245/42.725/44.205/1.480 ms
+]0;youngjun@ubuntu: ~/ruby-test/rails_projects/sample_appyoungjun@ubuntu:~/ruby-test/rails_projects/sample_app$ rails c
+Loading development environment (Rails 3.0.9)
+1.9.2-p180 :001 > user = {:[K :name => "jun", :email => "jun@sam.com" }
+ => {:name=>"jun", :email=>"jun@sam.com"} 
+1.9.2-p180 :002 > user{[K[:name]
+ => "jun" 
+1.9.2-p180 :003 > user[:email]
+ => "jun@sam.com" 
+1.9.2-p180 :004 > params ={[K {}
+ => {} 
+1.9.2-p180 :005 > params[:user] = { :name => "jun", :email => "jun@sa.com[K[K[K[Km.com" }
+ => {:name=>"jun", :email=>"jun@sam.com"} 
+1.9.2-p180 :006 > params
+ => {:user=>{:name=>"jun", :email=>"jun@sam.com"}} 
+1.9.2-p180 :007 > params[:user]
+ => {:name=>"jun", :email=>"jun@sam.com"} 
+1.9.2-p180 :008 > param[K[Kams[:user][n[K:name]
+ => "jun" 
+1.9.2-p180 :009 > flash = { :success => "It worked", :error => "It faile..."[K[K[K :-(" }
+ => {:success=>"It worked", :error=>"It faile. :-("} 
+1.9.2-p180 :010 > flash.each do [[K|key, vla[K[K[Ka[Kvalue|
+1.9.2-p180 :011 >     puts "ky[Key #{key, [K[K.inspect} has value #{key[K[K[Kvalue.inspect}"
+1.9.2-p180 :012?>   end
+key :success has value "It worked"
+key :error has va
